@@ -6,6 +6,7 @@
 @import url(cabecalho.css);
 @import url(content.css);
 @import url(rodape.css);
+@import url(menu__hamburguer.css);
 
 /* Declarando as Variáveis */
 :root {
@@ -15,4 +16,22 @@
     /* Fontes */
         --fonte__principal:'Sofia Sans Extra Condensed', sans-serif;
         --fonte__alternativa: 'Foldit', cursive;
+    /* Tamanhos */
+        --tamanho__mobile: 1rem;
+        --tamanho__tablet: 1.5rem;
+        --tamanho__desktop: 2rem;
+}
+
+* {
+    font-family: var(--fonte__principal);
+    font-size: var(--tamanho__desktop);
+}
+.container {
+    background-color: var(--cor__secundaria);
+}
+.secao {
+    background-color: var(--cor__principal);
+    width: 82vw;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
 }
