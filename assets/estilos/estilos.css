@@ -1,0 +1,18 @@
+/* Importando as Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,400;0,700;0,1000;1,100;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
+
+/* Importando estilos */
+@import url(cabecalho.css);
+@import url(content.css);
+@import url(rodape.css);
+
+/* Declarando as Variáveis */
+:root {
+    /* Cores */
+        --cor__principal: #FAD532;
+        --cor__secundaria: #333333;
+    /* Fontes */
+        --fonte__principal:'Sofia Sans Extra Condensed', sans-serif;
+        --fonte__alternativa: 'Foldit', cursive;
+}
