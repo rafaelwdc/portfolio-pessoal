@@ -1,0 +1,20 @@
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--cor__principal);
+    background-color: var(--cor__secundaria);
+    border-radius: 16px 99px 99px 16px;
+}
+
+.apresentacao > .titulo {
+    font-size: 2.5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.foto {
+    border: 5px solid var(--cor__secundaria);
+    border-radius: 100%;
+    width: 45vw;
+}
