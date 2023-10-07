@@ -18,3 +18,8 @@
     border-radius: 100%;
     width: 45vw;
 }
+
+.foto:hover {
+    transition: .5s;
+    transform: rotate(360deg);
+}
