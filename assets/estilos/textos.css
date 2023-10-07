@@ -1,0 +1,23 @@
+/* Mobile P */
+
+.titulo, .paragrafo {
+    font-family: var(--fonte__principal);
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.paragrafo {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.thin {
+    font-weight: 300;
+}
+
