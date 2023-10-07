@@ -1,10 +1,9 @@
-
-@media (max-width: 600px) {
+@media (max-width: 769px) {
     /* Cria a estilização do menu navegação */
     .menu {
         display: block;
         position: absolute;
-        width: fit-content;
+        width: 10em;
         top: 70px;
         left: 0;
         background-color: #333;
@@ -17,7 +16,7 @@
     
     /* Tamanho e Animação do menu navegação */
     #nav.active .menu {
-        height: calc(45vh -  70px);
+        height: calc(42vh -  70px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -34,7 +33,7 @@
         color: var(--cor__secundaria);
     }
 
-    /* Cria o botão do menu hamburguer */  
+    /* Estiliza o botão do menu hamburguer */  
     #botao__menu__hamburguer {
         display: flex;
         padding: 0.5em 1rem;
