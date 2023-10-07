@@ -21,3 +21,6 @@ strong {
     font-weight: 300;
 }
 
+.esquerda {
+    text-align: start;
+}
