@@ -1,17 +1,22 @@
 .rodape {
     width: 100vw;
-    height: 170px;
+    height: 18vh;
     background: var(--cor__principal);
     font-family: var(--fonte__principal);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 0;
 }
+
 .link__redes__sociais {
+    width: 10vw;
     margin: 1rem;
 }
-.rodape > .paragrafo {
-    
+
+.rodape> .paragrafo {
+    font-size: 1rem;
     margin: .1rem;
 }
