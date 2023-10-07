@@ -3,35 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
 /* Importando estilos */
-@import url(cabecalho.css);
-@import url(content.css);
-@import url(rodape.css);
-@import url(menu__hamburguer.css);
+@import url(textos.css); /* Toda a formatação de textos padrão */
+@import url(cabecalho.css); /* Toda formatação do cabeçalho */
+@import url(menu__hamburguer.css); /* Toda a formatação do menu hamburguer */
+@import url(index.css); /* Toda formatação da página index */
+@import url(sobre.css); /* Toda formatação da página index */
+@import url(rodape.css); /* Toda a formatação do rodapé */
 
 /* Declarando as Variáveis */
 :root {
+
     /* Cores */
         --cor__principal: #FAD532;
         --cor__secundaria: #333333;
+
     /* Fontes */
         --fonte__principal:'Sofia Sans Extra Condensed', sans-serif;
         --fonte__alternativa: 'Foldit', cursive;
+
     /* Tamanhos */
         --tamanho__mobile: 1rem;
         --tamanho__tablet: 1.5rem;
         --tamanho__desktop: 2rem;
-}
-
-* {
-    font-family: var(--fonte__principal);
-    font-size: var(--tamanho__desktop);
-}
-.container {
-    background-color: var(--cor__secundaria);
-}
-.secao {
-    background-color: var(--cor__principal);
-    width: 82vw;
-    margin: 1.5rem auto;
-    padding: 1.5rem;
 }
