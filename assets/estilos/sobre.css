@@ -1,10 +1,12 @@
 .apresentacao {
     display: flex;
+    width: 262px;
     align-items: center;
     gap: .5rem;
     color: var(--cor__principal);
     background-color: var(--cor__secundaria);
     border-radius: 16px 99px 99px 16px;
+    margin: 0 auto;
 }
 
 .apresentacao > .titulo {
@@ -16,7 +18,7 @@
 .foto {
     border: 5px solid var(--cor__secundaria);
     border-radius: 100%;
-    width: 45vw;
+    width: 156px;
 }
 
 .foto:hover {
