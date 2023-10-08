@@ -1,0 +1,44 @@
+.banner {
+    width: 262px;
+    height: 146px;
+    margin: 0 auto;
+}
+.curso-em-video {
+    background: url(../imagens/banner-cursoemvideo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.alura {
+    background: url(../imagens/banner-alura.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.uninter {
+    background: url(../imagens/banner-uninter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 375px) {
+    .banner {
+        width: 308px;
+        height: 170px;
+    }
+}
+@media (min-width: 425px) {
+    .banner {
+        width: 348px;
+        height: 190px;
+    }
+}
+@media (min-width: 768px) {
+    .banner {
+        width: 630px;
+        height: 350px;
+    }
+}
+
+
