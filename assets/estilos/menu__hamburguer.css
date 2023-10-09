@@ -1,74 +1,77 @@
-/* Cria a estilização do menu navegação */
-.menu {
-    display: block;
-    position: absolute;
-    width: 10em;
-    top: 70px;
-    left: 0;
-    background-color: var(--cor__secundaria);
-    height: 0;
-    transition: .6s;
-    z-index: 1000;
-    visibility: hidden;
-    overflow-y: hidden;
-}
-
-/* Tamanho e Animação do menu navegação */
-#nav.active .menu {
-    height: 13rem;
-    visibility: visible;
-    overflow-y: auto;
-}
-
-/* Item do menu navegação*/
-.menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    color: var(--cor__principal);
-    border-bottom: 2px solid rgba(0, 0, 0, .05);
-}
-.menu a:hover {
-    background-color: var(--cor__principal);
-    color: var(--cor__secundaria);
-}
-
-/* Estiliza o botão do menu hamburguer */  
-#botao__menu__hamburguer {
-    display: flex;
-    padding: 0.5em 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-/* Cria uma barra do menu Hamburguer */
-.hamburguer {
-    display: block;
-    width: 45px;
-    border-top: 9px solid var(--cor__secundaria);
-}
-
-/* Cria outras barras do hamburguer usando pseudoelementos */
-.hamburguer::after, .hamburguer::before {
-    content: '';
-    display: block;
-    width: 45px;
-    height: 9px;
-    background-color: var(--cor__secundaria);
-    margin-top: 5px;
-    transition: .3s;
-    position: relative;
-}
-
-/* Cria a animação do menu Hamburguer, quando ele for clicado, se transformará em um X */
-#nav.active .hamburguer {
-    border-top-color: transparent;
-}
-#nav.active .hamburguer::before {
-    transform: rotate(135deg);
-}
-#nav.active .hamburguer::after {
-    transform: rotate(-135deg);
-    top: -14px;
+@media (max-width: 768px) {
+    
+    /* Cria a estilização do menu navegação */
+    .menu {
+        display: block;
+        position: absolute;
+        width: 10em;
+        top: 70px;
+        left: 0;
+        background-color: var(--cor__secundaria);
+        height: 0;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    /* Tamanho e Animação do menu navegação */
+    #nav.active .menu {
+        height: 13rem;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    /* Item do menu navegação*/
+    .menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        color: var(--cor__principal);
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    .menu a:hover {
+        background-color: var(--cor__principal);
+        color: var(--cor__secundaria);
+    }
+    
+    /* Estiliza o botão do menu hamburguer */  
+    #botao__menu__hamburguer {
+        display: flex;
+        padding: 0.5em 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    /* Cria uma barra do menu Hamburguer */
+    .hamburguer {
+        display: block;
+        width: 45px;
+        border-top: 9px solid var(--cor__secundaria);
+    }
+    
+    /* Cria outras barras do hamburguer usando pseudoelementos */
+    .hamburguer::after, .hamburguer::before {
+        content: '';
+        display: block;
+        width: 45px;
+        height: 9px;
+        background-color: var(--cor__secundaria);
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    
+    /* Cria a animação do menu Hamburguer, quando ele for clicado, se transformará em um X */
+    #nav.active .hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -14px;
+    }
 }
