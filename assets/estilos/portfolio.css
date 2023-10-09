@@ -1,0 +1,114 @@
+.card-portfolio {
+    width: 262px;
+    height: 200px;
+    margin: 1rem auto;
+    border-radius: 1em;
+    border: 1px solid #777;
+}
+
+.transparente {
+    width: 262px;
+    height: 100px;
+}
+
+.card-apresentacao {
+    width: 262px;
+    height: 100px;
+    border-radius: 1em 5em 1em 1em;
+    color: var(--cor__principal);
+    background-color: #000000cc;
+    border: 1px solid #777;
+}
+
+.card-apresentacao > .titulo {
+    font-size: 1rem;
+    padding: .5em;
+}
+.card-apresentacao > .paragrafo {
+    font-size: .7rem;
+    padding: 0 .7em;
+}
+
+.botao-card {
+    background-color: var(--cor__principal);
+    color: var(--cor__secundaria);
+    padding: .4rem;
+    border-radius: .5rem;
+    font-family: var(--fonte__principal);
+    margin-top: 1rem;
+    margin-left: 11rem;
+}
+
+.sebo-digital {
+    background: url(../imagens/sebo-digital.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sorteador {
+    background: url(../imagens/sorteador.png);
+    background-size: cover;
+}
+
+.orkut {
+    background: url(../imagens/orkut.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 375px) {
+    .card-portfolio  {
+        width: 308px;
+        height: 200px;
+    }
+    .card-apresentacao {
+        width: 308px;
+    }
+    .botao-card {
+        margin-left: 14rem;
+    }
+}
+@media (min-width: 425px) {
+    .card-portfolio {
+        width: 348px;
+        height: 200px;
+    }
+    .card-apresentacao {
+        width: 348px;
+    }
+    .botao-card {
+        margin-left: 16rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-portfolio {
+        width: 630px;
+        height: 300px; 
+    }
+
+    .transparente {
+        margin-top: 0;
+        width: 262px;
+        height: 125px;
+    }
+
+    .card-apresentacao {
+        width: 630px;
+        height: 175px;
+    }
+
+    .card-apresentacao > .titulo {
+       font-size: 2.5rem; 
+    }
+
+    .card-apresentacao > .paragrafo {
+        font-size: 1.4rem;
+    }
+
+    .botao-card {
+        margin-top: 2rem;
+        margin-left: 33rem;
+        padding: .5rem 1rem;
+    }
+}
