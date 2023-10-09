@@ -12,11 +12,20 @@
 }
 
 .link__redes__sociais {
-    width: 10vw;
+    width: 42px;
     margin: 1rem;
 }
 
-.rodape> .paragrafo {
+.rodape > .paragrafo {
     font-size: 1rem;
     margin: .1rem;
+}
+
+@media (min-width: 768px) {
+    .rodape {
+        height: 25vh;
+    }
+    .link__redes__sociais {
+        width: 45px;
+    }
 }
