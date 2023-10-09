@@ -9,6 +9,7 @@
 @import url(index.css); /* Toda formatação da página index */
 @import url(sobre.css); /* Toda formatação da página sobre */
 @import url(academico.css); /* Toda formatação da página academico */
+@import url(portfolio.css); /* Toda formatação da página portfolio */
 @import url(rodape.css); /* Toda a formatação do rodapé */
 
 /* Declarando as Variáveis */
@@ -26,10 +27,4 @@
         --tamanho__mobile: 1rem;
         --tamanho__tablet: 1.5rem;
         --tamanho__desktop: 2rem;
-}
-
-.lista {
-    background-color: var(--cor__secundaria);
-    color: var(--cor__principal);
-    padding: .5em;
 }
