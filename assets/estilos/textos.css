@@ -1,7 +1,7 @@
 /* Mobile */
 
 .titulo, .paragrafo {
-    font-family: var(--fonte__principal);
+    font-family: var(--fonte-principal);
 }
 
 .titulo {
