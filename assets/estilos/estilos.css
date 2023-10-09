@@ -5,7 +5,7 @@
 /* Importando estilos */
 @import url(textos.css); /* Toda a formatação de textos padrão */
 @import url(cabecalho.css); /* Toda formatação do cabeçalho */
-@import url(menu__hamburguer.css); /* Toda a formatação do menu hamburguer */
+@import url(menu-hamburguer.css); /* Toda a formatação do menu hamburguer */
 @import url(index.css); /* Toda formatação da página index */
 @import url(sobre.css); /* Toda formatação da página sobre */
 @import url(academico.css); /* Toda formatação da página academico */
@@ -16,15 +16,15 @@
 :root {
 
     /* Cores */
-        --cor__principal: #FAD532;
-        --cor__secundaria: #333333;
+        --cor-principal: #FAD532;
+        --cor-secundaria: #333333;
 
     /* Fontes */
-        --fonte__principal:'Sofia Sans Extra Condensed', sans-serif;
-        --fonte__alternativa: 'Foldit', cursive;
+        --fonte-principal:'Sofia Sans Extra Condensed', sans-serif;
+        --fonte-alternativa: 'Foldit', cursive;
 
     /* Tamanhos */
-        --tamanho__mobile: 1rem;
-        --tamanho__tablet: 1.5rem;
-        --tamanho__desktop: 2rem;
+        --tamanho-mobile: 1rem;
+        --tamanho-tablet: 1.5rem;
+        --tamanho-desktop: 2rem;
 }
