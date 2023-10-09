@@ -1,10 +1,10 @@
 .container {
-    background-color: var(--cor__secundaria);
+    background-color: var(--cor-secundaria);
     text-align: center;
 }
 
 .secao {
-    background-color: var(--cor__principal);
+    background-color: var(--cor-principal);
     width: 82vw;
     height: fit-content;
     margin: 1.5rem auto;
