@@ -29,8 +29,8 @@
 }
 .lista {
     width: 246px;
-    background-color: var(--cor__secundaria);
-    color: var(--cor__principal);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
     padding: .5em;
     margin: 0 auto;
 }
