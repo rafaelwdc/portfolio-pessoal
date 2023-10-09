@@ -3,8 +3,8 @@
     width: 262px;
     align-items: center;
     gap: .5rem;
-    color: var(--cor__principal);
-    background-color: var(--cor__secundaria);
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     border-radius: 16px 99px 99px 16px;
     margin: 0 auto;
 }
@@ -16,7 +16,7 @@
 }
 
 .foto {
-    border: 5px solid var(--cor__secundaria);
+    border: 5px solid var(--cor-secundaria);
     border-radius: 100%;
     width: 156px;
 }
