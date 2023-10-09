@@ -1,4 +1,4 @@
-/* Mobile P */
+/* Mobile */
 
 .titulo, .paragrafo {
     font-family: var(--fonte__principal);
@@ -24,3 +24,18 @@ strong {
 .esquerda {
     text-align: start;
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .paragrafo {
+        font-size: 1.75rem;
+    }
+    
+}
+/* Laptop */
+
+/* Desktop */
