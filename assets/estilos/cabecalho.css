@@ -7,7 +7,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     background: #FAD532;
-    font-family: var(--fonte__principal);
+    font-family: var(--fonte-principal);
 }
 
 .logo {
@@ -15,7 +15,7 @@
     width: 130px;
 }
 
-#botao__menu__hamburguer {
+#botao-menu-hamburguer {
     display: none;
 }
 
