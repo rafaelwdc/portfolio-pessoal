@@ -4,7 +4,7 @@
     padding: 1rem;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     background: #FAD532;
     font-family: var(--fonte-principal);
@@ -28,4 +28,8 @@
 .menu a {
     display: block;
     padding: .5rem;
+}
+
+@media (max-width: 426px) {
+    
 }
