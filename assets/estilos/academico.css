@@ -64,11 +64,20 @@
 
 @media (min-width: 768px) {
     .banner {
-        width: 630px;
-        height: 350px;
+        width: 308px;
+        height: 170px;
     }
     .lista {
-        width: 614px;
+        width: 292px;
+        font-size: .5rem;
+    }
+    .academico {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 310px 310px;
+    }
+    .apresentacao-academico {
+        margin: 0 auto;
     }
 }
 
