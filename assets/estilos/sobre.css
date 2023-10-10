@@ -25,3 +25,12 @@
     transition: .5s;
     transform: rotate(360deg);
 }
+
+@media (min-width: 768px) {
+    .apresentacao-desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: .5rem;
+    }
+}
