@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
-    
+    .cabecalho {
+        flex-direction: row-reverse;
+    }
     /* Cria a estilização do menu navegação */
     .menu {
         display: block;
@@ -17,7 +19,7 @@
     
     /* Tamanho e Animação do menu navegação */
     #nav.active .menu {
-        height: 13rem;
+        height: 15.7rem;
         visibility: visible;
         overflow-y: auto;
     }
