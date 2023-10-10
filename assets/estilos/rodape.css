@@ -1,6 +1,6 @@
 .rodape {
     width: 100vw;
-    height: 18vh;
+    height: 120px;
     background: var(--cor-principal);
     font-family: var(--fonte-principal);
     display: flex;
@@ -22,10 +22,19 @@
 }
 
 @media (min-width: 768px) {
+    
     .rodape {
-        height: 25vh;
+        height: 160px;
+    }
+    .lista-redes-sociais {
+        margin-bottom: .5rem;
+
     }
     .link-redes-sociais {
-        width: 45px;
+        width: 55px;
+    }
+
+    .rodape > .paragrafo {
+        font-size: 1.5rem;
     }
 }
