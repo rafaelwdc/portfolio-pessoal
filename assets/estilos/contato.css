@@ -1,0 +1,38 @@
+.contato-redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+.contato-link-redes-sociais {
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.campo, .mensagem {
+    width: 80vw;
+    margin: 1rem auto;
+
+}
+
+.linha-divisoria {
+    margin: 1rem 0;
+}
+
+.campo, .botao, .mensagem {
+    font-family: var(--fonte-principal);
+    box-shadow: 4px 4px 1px;
+}
+.mensagem {
+    height: 7rem;
+}
+
+.botao {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    margin-left: 79%;
+}
