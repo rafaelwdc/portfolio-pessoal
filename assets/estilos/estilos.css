@@ -2,17 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,400;0,700;0,1000;1,100;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
-/* Importando estilos */
-@import url(textos.css); /* Toda a formatação de textos padrão */
-@import url(cabecalho.css); /* Toda formatação do cabeçalho */
-@import url(menu-hamburguer.css); /* Toda a formatação do menu hamburguer */
+/* Importando estilos padrões de todas as páginas */
+@import url(textos.css); /* Formatação de textos padrão de todas as páginas */
+@import url(cabecalho.css); /* Formatação do cabeçalho de todas as páginas */
+@import url(menu-hamburguer.css); /* Formatação do menu hamburguer de todas as páginas */
+@import url(rodape.css); /* Formatação do rodapé de todas as páginas */
+
+/* Importando estilos das páginas */
 @import url(index.css); /* Toda formatação da página index */
 @import url(sobre.css); /* Toda formatação da página sobre */
-@import url(academico.css); /* Toda formatação da página academico */
+@import url(academico.css); /* Toda formatação da página acadêmico */
 @import url(portfolio.css); /* Toda formatação da página portfolio */
-@import url(rodape.css); /* Toda a formatação do rodapé */
+@import url(contato.css); /* Toda formatação da página contato */
 
 /* Declarando as Variáveis */
+
 :root {
 
     /* Cores */
