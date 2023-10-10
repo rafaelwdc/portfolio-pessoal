@@ -17,7 +17,7 @@
     <header class="cabecalho">
         <a href="../index.html" class="logo"><img class="logo" src="../assets/imagens/Logo.svg"  title="Home" alt="Logo"></a>
         <nav class="navegacao" id="nav">
-
+            
             <button id="botao-menu-hamburguer" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                 <span class="hamburguer"></span>
             </button>
@@ -41,11 +41,25 @@
     <!-- Conteúdo principal da página -->
     <main class="container">
         <section class="principal secao" id="principal">
+            <h1 class="titulo">Fique por dentro das novidades me seguindo em todas as minhas redes sociais!</h1>
             <ul class="contato-redes-sociais">
-                <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Github.svg" alt="Ícone do Github"></a>
-                <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Insta.svg" alt="Ícone do Github"></a>
-                <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Linkedin.svg" alt="Ícone do Github"></a>
+                <a href="#" class="contato-link-redes-sociais"><img src="../assets/imagens/Github.svg" alt="Ícone do Github">Github</a>
+                <a href="#" class="contato-link-redes-sociais"><img src="../assets/imagens/Insta.svg" alt="Ícone do Instagram">Instagram</a>
+                <a href="#" class="contato-link-redes-sociais"><img src="../assets/imagens/Linkedin.svg" alt="Ícone do Linkedin">Linkedin</a>
             </ul>
+            <hr class="linha-divisoria">
+            <h1 class="titulo">Ou se preferir pode me enviar uma mensagem por aqui!</h1>
+            <form action="https://formsubmit.co/rafaelmfreitas93@email.com"  method="POST">
+                <input type="text" class="campo" name="nome" id="nome" placeholder="Digite o seu nome:">
+                <br>
+                <input type="email" class="campo" name="email" placeholder="Digite o seu e-mail:">
+                <br>
+                <textarea name="mensagem" class="mensagem" id="msg" cols="23" rows="4" placeholder="Digite a sua mensagem:"></textarea>
+                <br>
+                <button type="submit" class="botao">Enviar</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">  
+            </form>
         </section>
     </main>
 
@@ -53,8 +67,8 @@
     <footer class="rodape">
         <ul class="lista-redes-sociais">
             <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Github-1.svg" alt="Ícone do Github"></a>
-            <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Insta-1.svg" alt="Ícone do Github"></a>
-            <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Linkedin-1.svg" alt="Ícone do Github"></a>
+            <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Insta-1.svg" alt="Ícone do Instagram"></a>
+            <a href="#" class="link-redes-sociais"><img src="../assets/imagens/Linkedin-1.svg" alt="Ícone do Linkedin"></a>
         </ul>
         <p class="paragrafo">Rafael Matheus de Freitas</p>
         <p class="paragrafo">&copy; 2023 | Curitiba PR</p>
