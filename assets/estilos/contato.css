@@ -33,7 +33,7 @@
     color: var(--cor-principal);
     background-color: var(--cor-secundaria);
     border-radius: 8px;
-    margin-left: 79%;
+    margin-left: 70%;
 }
 
 @media (min-width: 426px) {
@@ -44,14 +44,17 @@
         width: 100px;
     }
     .campo, .mensagem {
-        width: 83vw;
+        width: 500px;
     }
+
     .campo {
         height: 3rem;
     }
+
     .mensagem {
         height: 10rem;
     }
+
     .botao {
         padding: 1rem 1.5rem;
     }
@@ -60,5 +63,44 @@
 @media (min-width: 768px) {
     .linha-divisoria {
         margin: 4rem 0;
+    }
+}
+@media (min-width: 769px) {
+    .contato {
+        display: flex;  
+    }
+    .apresentacao-contatos > .titulo {
+        font-size: 1.5rem;
+    }
+
+    .linha-divisoria {
+        margin: 2.5rem 0;
+    }
+    .contato-redes-sociais {
+        margin-top: 1rem;
+    }
+    .redes-sociais {
+        margin-top: 5rem;
+    }
+
+    .contato-img-redes-sociais {
+        width: 60px;
+    }
+
+    .campo, .mensagem {
+        width: 300px;
+        margin: 0.5rem;
+    }
+
+    .campo {
+        height: 1.5rem;
+    }
+
+    .mensagem {
+        height: 7rem;
+    }
+
+    .botao {
+        padding: 1rem 1.5rem;
     }
 }
