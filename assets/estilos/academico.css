@@ -27,6 +27,13 @@
     background-position: center;
     background-size: cover;
 }
+.cisco {
+    background: url(../imagens/banner-cisco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
 .lista {
     width: 246px;
     background-color: var(--cor-secundaria);
