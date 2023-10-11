@@ -1,39 +1,81 @@
 .banner {
     width: 262px;
     height: 146px;
+    margin: 0 auto .5rem;
+}
+
+.apresentacao-academico {
     margin: 0 auto;
 }
+
+.banner > .titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    text-align: left;
+    padding-top: 4.7rem;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.apresentacao-card-academico {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0 .5rem;
+}
+
+.apresentacao-card-academico>.paragrafo {
+    font-size: .8rem;
+    color: var(--cor-tercearia);
+}
+
+.botao-card-academico {
+    font-family: var(--fonte-principal);
+    font-size: .8rem;
+    background-color: var(--cor-principal);
+    margin-left: 3rem;
+    border-radius: 4px;
+    padding: 0 .5rem;
+    padding-top: .5rem;
+}
+
 .curso-em-video {
-    background: url(../imagens/banner-cursoemvideo.png);
+    background: url(../../imagens/card-academico/bg-card-curso-em-video.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .alura {
-    background: url(../imagens/banner-alura.png);
+    background: url(../../imagens/card-academico/bg-card-alura.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .alura-lingua {
-    background: url(../imagens/banner-aluralingua.png);
+    background: url(../../imagens/card-academico/bg-card-aluralingua.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .uninter {
-    background: url(../imagens/banner-uninter.png);
+    background: url(../../imagens/card-academico/bg-card-uninter.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 .cisco {
-    background: url(../imagens/banner-cisco.png);
+    background: url(../../imagens/card-academico/bg-card-cisco.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
 }
+
 .lista {
     width: 246px;
     background-color: var(--cor-secundaria);
@@ -42,13 +84,24 @@
     margin: 0 auto;
 }
 
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
 @media (min-width: 375px) {
     .banner {
         width: 308px;
         height: 170px;
     }
-    .lista {
-        width: 292px;
+    .banner>.titulo {
+        padding-top: 5rem;
+        font-size: 2rem;
+    }
+    .apresentacao-card-academico>.paragrafo {
+        font-size: 1rem;
     }
 }
 
@@ -57,8 +110,12 @@
         width: 348px;
         height: 190px;
     }
-    .lista {
-        width: 332px;
+    .banner>.titulo {
+        padding-top: 5rem;
+        font-size: 2.3rem;
+    }
+    .apresentacao-card-academico>.paragrafo {
+        font-size: 1.3rem;
     }
 }
 
@@ -67,18 +124,19 @@
         width: 308px;
         height: 170px;
     }
+
     .lista {
         width: 292px;
         font-size: .5rem;
     }
+
     .academico {
         display: grid;
         justify-content: space-around;
         grid-template-columns: 310px 310px;
     }
+
     .apresentacao-academico {
         margin: 0 auto;
     }
 }
-
-
