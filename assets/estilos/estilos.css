@@ -3,17 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
 /* Importando estilos padrões de todas as páginas */
-@import url(textos.css); /* Formatação de textos padrão de todas as páginas */
-@import url(cabecalho.css); /* Formatação do cabeçalho de todas as páginas */
-@import url(menu-hamburguer.css); /* Formatação do menu hamburguer de todas as páginas */
-@import url(rodape.css); /* Formatação do rodapé de todas as páginas */
+@import url(default/textos.css); /* Formatação de textos padrão de todas as páginas */
+@import url(default/cabecalho.css); /* Formatação do cabeçalho de todas as páginas */
+@import url(default/menu-hamburguer.css); /* Formatação do menu hamburguer de todas as páginas */
+@import url(default/rodape.css); /* Formatação do rodapé de todas as páginas */
 
 /* Importando estilos das páginas */
-@import url(index.css); /* Toda formatação da página index */
-@import url(sobre.css); /* Toda formatação da página sobre */
-@import url(academico.css); /* Toda formatação da página acadêmico */
-@import url(portfolio.css); /* Toda formatação da página portfolio */
-@import url(contato.css); /* Toda formatação da página contato */
+@import url(paginas/index.css); /* Toda formatação da página index */
+@import url(paginas/sobre.css); /* Toda formatação da página sobre */
+@import url(paginas/academico.css); /* Toda formatação da página acadêmico */
+@import url(paginas/portfolio.css); /* Toda formatação da página portfolio */
+@import url(paginas/contato.css); /* Toda formatação da página contato */
 
 /* Declarando as Variáveis */
 
