@@ -32,3 +32,7 @@
         --tamanho-tablet: 1.5rem;
         --tamanho-desktop: 2rem;
 }
+.secao {
+    margin-top: 86px;
+    height: fit-content;
+}
