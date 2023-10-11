@@ -1,0 +1,41 @@
+/* Mobile */
+
+.titulo, .paragrafo {
+    font-family: var(--fonte-principal);
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.paragrafo {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.esquerda {
+    text-align: start;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .paragrafo {
+        font-size: 1.75rem;
+    }
+    
+}
+/* Laptop */
+
+/* Desktop */
