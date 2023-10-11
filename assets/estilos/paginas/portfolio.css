@@ -40,18 +40,18 @@
 }
 
 .sebo-digital {
-    background: url(../imagens/sebo-digital.png);
+    background: url(../../imagens/card-portfolio/sebo-digital.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sorteador {
-    background: url(../imagens/sorteador.png);
+    background: url(../../imagens/card-portfolio/sorteador.png);
     background-size: cover;
 }
 
 .orkut {
-    background: url(../imagens/orkut.png);
+    background: url(../../imagens/card-portfolio/orkut.png);
     background-size: cover;
     background-position: center;
 }
