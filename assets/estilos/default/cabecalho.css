@@ -1,0 +1,39 @@
+.cabecalho {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FAD532;
+    font-family: var(--fonte-principal);
+}
+
+.logo {
+    position: relative;
+    width: 130px;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem
+}
+
+.menu a {
+    display: block;
+    padding: .5rem;
+}
+
+
+@media (max-width: 426px) {
+    
+}
