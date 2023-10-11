@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+    /* Posiciona o menu hamburguer do lado esquerdo e a logo do lado direito para as telas mobile e Tablet */
     .cabecalho {
         flex-direction: row-reverse;
     }
@@ -37,7 +38,7 @@
     }
     
     /* Estiliza o botão do menu hamburguer */  
-    #botao-menu-hamburguer {
+    .menu-hamburguer {
         display: flex;
         padding: 0.5em 1rem;
         font-size: 1rem;
