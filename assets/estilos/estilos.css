@@ -3,37 +3,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
 /* Importando estilos padrões de todas as páginas */
-@import url(default/textos.css); /* Formatação de textos padrão de todas as páginas */
-@import url(default/cabecalho.css); /* Formatação do cabeçalho de todas as páginas */
-@import url(default/menu-hamburguer.css); /* Formatação do menu hamburguer de todas as páginas */
-@import url(default/rodape.css); /* Formatação do rodapé de todas as páginas */
+@import url(default/textos.css);
+/* Formatação de textos padrão de todas as páginas */
+@import url(default/cabecalho.css);
+/* Formatação do cabeçalho de todas as páginas */
+@import url(default/menu-hamburguer.css);
+/* Formatação do menu hamburguer de todas as páginas */
+@import url(default/rodape.css);
+/* Formatação do rodapé de todas as páginas */
 
 /* Importando estilos das páginas */
-@import url(paginas/index.css); /* Toda formatação da página index */
-@import url(paginas/sobre.css); /* Toda formatação da página sobre */
-@import url(paginas/academico.css); /* Toda formatação da página acadêmico */
-@import url(paginas/portfolio.css); /* Toda formatação da página portfolio */
-@import url(paginas/contato.css); /* Toda formatação da página contato */
+@import url(paginas/index.css);
+/* Toda formatação da página index */
+@import url(paginas/sobre.css);
+/* Toda formatação da página sobre */
+@import url(paginas/academico.css);
+/* Toda formatação da página acadêmico */
+@import url(paginas/portfolio.css);
+/* Toda formatação da página portfolio */
+@import url(paginas/contato.css);
+/* Toda formatação da página contato */
 
 /* Declarando as Variáveis */
 
 :root {
 
     /* Cores */
-        --cor-principal: #FAD532;
-        --cor-secundaria: #333333;
-        --cor-tercearia: #F8F8F8;
+    --cor-principal: #FAD532;
+    --cor-secundaria: #333333;
+    --cor-tercearia: #F8F8F8;
 
     /* Fontes */
-        --fonte-principal:'Sofia Sans Extra Condensed', sans-serif;
-        --fonte-alternativa: 'Foldit', cursive;
+    --fonte-principal: 'Sofia Sans Extra Condensed', sans-serif;
+    --fonte-alternativa: 'Foldit', cursive;
 
     /* Tamanhos */
-        --tamanho-mobile: 1rem;
-        --tamanho-tablet: 1.5rem;
-        --tamanho-desktop: 2rem;
+    --tamanho-mobile: 1rem;
+    --tamanho-tablet: 1.5rem;
+    --tamanho-desktop: 2rem;
 }
+
 .secao {
     margin-top: 86px;
     height: fit-content;
+}
+
+#fundo {
+    opacity: 0.8;
+    background-color: var(--cor-secundaria);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#card-curso-em-video, #card-alura-lingua, #card-alura, #card-uninter, #card-cisco {
+    width: 262px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 11%;
+    background-color: var(--cor-principal);
+    z-index: 99;
+    display: none;
 }
