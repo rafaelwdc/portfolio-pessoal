@@ -15,15 +15,19 @@
 <body class="container">
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <a href="../index.html" class="logo"><img class="logo" src="../assets/imagens/id-visual/Logo.svg" title="Home"
-                alt="Logo"></a>
+        <!-- Logo oficial das páginas do Rafael Matheus -->
+        <a href="../index.html" class="logo"><img class="logo" src="../assets/imagens/id-visual/Logo.svg" title="Home" alt="Logo"></a>
+        <!-- Menu Navegação/Hamburguer -->
         <nav class="navegacao" id="nav">
-
+            <!-- Menu Hamburguer -->
             <a id="botao-menu-hamburguer" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">
                 <span class="hamburguer"></span>
             </a>
+            <!-- Menu Navegação -->
             <ul class="menu" role="menu">
+                
+                <!-- Items do Menu de Navegação -->
                 <li>
                     <a href="../index.html">Home</a>
                 </li>
@@ -44,44 +48,272 @@
     </header>
 
     <!-- Conteúdo principal da página -->
-    <main class="container">
-        <section class="academico secao" id="principal">
-            <div class="banner curso-em-video">
-                <h2 class="titulo">Curso em Vídeo</h2>
-                <div class="apresentacao-card-academico">
-                    <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
-                    <a class="botao-card-academico" href="academicos/curso-em-video.html">Saiba Mais</a>
+    <main class="container secao">
+        <!-- Título da Página -->
+        <h1 class="titulo esquerda">Onde estudei</h1>
+        <!-- A Seção apresentará todos os Cards Minimizados, e os Cards Expandidos com mais informações sobre a instituição abrirá quando o usuário clicar no botão Saiba Mais contido em cada um deles -->
+
+        <!-- Card Minimizado | Curso em Vídeo -->
+        <div class="card-academico curso-em-video">
+            <!-- Título do Card -->
+            <h2 class="titulo">Curso em Vídeo</h2>
+            <!-- Apresentação de um breve texto e logo ao lado um botão para expandir o Card -->
+            <div class="apresentacao-card-academico">
+                <!-- Breve Texto sobre a instituição -->
+                <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
+                <!-- Botão para expandir o card, abrirá um Card com mais informações -->
+                <a href="#" class="botao-card-academico abrir" onclick="abrir_curso_em_video();">Saiba Mais</a>
+
+                <div id="fundo"></div> <!-- Essa div ficará responsável por escurecer a tela ao exibir o card expandido -->
+
+                <!-- Card Expandido | Curso em Vídeo -->
+                <div id="card-curso-em-video">
+                    <!-- Botão para voltar à apresentação de Cards -->
+                    <a href="#" class="botao-voltar fechar" onclick="fechar_curso_em_video();">
+                        <div class="botao-voltar">
+                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                            <p class="paragrafo">Voltar</p>
+                        </div>
+                    </a>
+                    <div class="card-academico curso-em-video">
+                        <h2 class="titulo">Curso em Vídeo</h2>
+                        <div class="apresentacao-card-academico">
+                            <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
+                        </div>
+                        <ul class="lista">
+                            <li>
+                                <p class="paragrafo">HTML5 e CSS3: Módulo 1 de 5;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">HTML5 e CSS3: Módulo 2 de 5;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">HTML5 e CSS3: Módulo 3 de 5;</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="banner alura-lingua">
-                <h2 class="titulo">Alura Língua</h2>
-                <div class="apresentacao-card-academico">
-                    <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
-                    <a class="botao-card-academico" href="academicos/aluralingua.html">Saiba Mais</a>
+        </div>
+
+        <!-- Card Minimizado | Alura Língua -->
+
+        <div class="card-academico alura-lingua">
+            <h2 class="titulo">Alura Língua</h2>
+            <div class="apresentacao-card-academico">
+                <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
+                <a href="#" class="botao-card-academico abrir" onclick="abrir_alura_lingua();">Saiba Mais</a>
+                <div id="fundo"></div>
+                <div id="card-alura-lingua">
+                    <a href="#" class="botao-voltar fechar" onclick="fechar_alura_lingua();">
+                        <div class="botao-voltar">
+                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                            <p class="paragrafo">Voltar</p>
+                        </div>
+                    </a>
+                    <div class="card-academico alura-lingua">
+                        <h2 class="titulo">Alura Língua</h2>
+                        <div class="apresentacao-card-academico">
+                            <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
+                        </div>
+                        <ul class="lista">
+                            <li>
+                                <p class="paragrafo">Inglês Iniciante - Comunicação essencial;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Inglês Básico - Conversando em uma viagem;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Inglês Pré-intermediário - Sobrevivendo em outro país;</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="banner alura">
-                <h2 class="titulo">Alura</h2>
-                <div class="apresentacao-card-academico">
-                    <p class="paragrafo">Cursos de Tecnologia desenvolvidos pela<br>maior escola de Tecnologia do país</p>
-                    <a class="botao-card-academico" href="academicos/alura.html">Saiba Mais</a>
+        </div>
+
+        <!-- Card Minimizado | Alura -->
+
+        <div class="card-academico alura">
+            <h2 class="titulo">Alura</h2>
+            <div class="apresentacao-card-academico">
+                <p class="paragrafo">Cursos de Tecnologia desenvolvidos pela<br>maior escola de Tecnologia do país</p>
+                <a href="#" class="botao-card-academico abrir" onclick="abrir_alura();">Saiba Mais</a>
+                <div id="fundo"></div>
+                <div id="card-alura">
+                    <a href="#" class="botao-voltar fechar" onclick="fechar_alura();">
+                        <div class="botao-voltar">
+                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                            <p class="paragrafo">Voltar</p>
+                        </div>
+                    </a>
+                    <div class="card-academico alura">
+                        <h2 class="titulo">Alura</h2>
+                        <div class="apresentacao-card-academico">
+                            <p class="paragrafo">Cursos de Tecnologia desenvolvidos<br>pela maior escola do segmento no país</p>
+                        </div>
+                        <ul class="lista">
+                            <li>
+                                <p class="paragrafo">Iniciante em Programação;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">HTML e CSS;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">TypeScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">JavaScript para Back-end;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Android com Java;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Linguagem Kotlin;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Acessibilidade;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">CSS Aprofundado;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Front-end;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">JavaScript para Front-end;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">React com JavaScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">React com TypeScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">React com TypeScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Figma;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Aprendizagem;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Iniciante em Programação;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">HTML e CSS;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">TypeScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">JavaScript para Back-end;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Android com Java;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Linguagem Kotlin;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Acessibilidade;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">CSS Aprofundado;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Front-end;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">JavaScript para Front-end;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">React com JavaScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">React com TypeScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">React com TypeScript;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Figma;</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Aprendizagem;</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="banner uninter">
-                <h2 class="titulo">Uninter</h2>
-                <div class="apresentacao-card-academico">
-                    <p class="paragrafo">Universidade na qual estou cursando<br>Análise e Desenvolvimento de Sistema</p>
-                    <a class="botao-card-academico" href="academicos/uninter.html">Saiba Mais</a>
+        </div>
+
+        <!-- Card Minimizado | Uninter -->
+
+        <div class="card-academico uninter">
+            <h2 class="titulo">Uninter</h2>
+            <div class="apresentacao-card-academico">
+                <p class="paragrafo">Universidade na qual estou cursando <br>Análise e Desenvolvimento de Sistemas</p>
+                <a href="#" class="botao-card-academico abrir" onclick="abrir_uninter();">Saiba Mais</a>
+                <div id="fundo"></div>
+                <div id="card-uninter">
+                    <a href="#" class="botao-voltar fechar" onclick="fechar_uninter();">
+                        <div class="botao-voltar">
+                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                            <p class="paragrafo">Voltar</p>
+                        </div>
+                    </a>
+                    <div class="card-academico uninter">
+                        <h2 class="titulo">Uninter</h2>
+                        <div class="apresentacao-card-academico">
+                            <p class="paragrafo">Universidade na qual estou cursando <br>Análise e Desenvolvimento de Sistemas</p>
+                        </div>
+                        <ul class="lista">
+                            <li>
+                                <p class="paragrafo">CTS - Análise e Desenvolvimento de Sistemas</p>
+                            </li>
+                            <li>
+                                <p class="paragrafo">Ubest - Curso de Inglês</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="banner cisco">
-                <h2 class="titulo">Cisco Academy</h2>
-                <div class="apresentacao-card-academico">
-                    <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma gigante do seguimento</p>
-                    <a class="botao-card-academico" href="academicos/cisco.html">Saiba Mais</a>
+        </div>
+
+        <!-- Card Minimizado | Cisco -->
+
+        <div class="card-academico cisco">
+            <h2 class="titulo">Cisco Network Academy</h2>
+            <div class="apresentacao-card-academico">
+                <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma das maiores empresas do mundo</p>
+                <a href="#" class="botao-card-academico abrir" onclick="abrir_cisco();">Saiba Mais</a>
+                <div id="fundo"></div>
+                <div id="card-cisco">
+                    <a href="#" class="botao-voltar fechar" onclick="fechar_cisco();">
+                        <div class="botao-voltar">
+                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                            <p class="paragrafo">Voltar</p>
+                        </div>
+                    </a>
+                    <div class="card-academico cisco">
+                        <h2 class="titulo">Cisco Academy</h2>
+                        <div class="apresentacao-card-academico">
+                            <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma das maiores empresas do mundo</p>
+                        </div>
+                        <ul class="lista">
+                            <li>
+                                <p class="paragrafo">Fundamentos Python 1</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
     </main>
 
     <!-- Rodapé -->
