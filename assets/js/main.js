@@ -27,3 +27,69 @@ function expandir_menu(evento) {
 // Adiciona os escutadores para os eventos de click do mouse, ou em touch em caso de aparelhos Mobile;
 menu_hamburguer.addEventListener('click', expandir_menu);
 menu_hamburguer.addEventListener('touchstart', expandir_menu);
+
+
+// Controle do Fundo
+function abrir_fundo() {
+    document.querySelector('#fundo').style.display = 'block';
+}
+function fechar_fundo() {
+    document.querySelector('#fundo').style.display = 'none';
+}
+
+
+// Abrir o Card Expandido do Curso em Vídeo 
+function abrir_curso_em_video(){
+    abrir_fundo();
+    document.querySelector('#card-curso-em-video').style.display = 'block';
+}
+
+// Fechar o Card Expandido do Curso em Vídeo 
+function fechar_curso_em_video(){
+    fechar_fundo();
+    document.querySelector('#card-curso-em-video').style.display = 'none';
+}
+
+// Abrir o Card Expandido do Alura Língua 
+function abrir_alura_lingua(){
+    abrir_fundo();
+    document.querySelector('#card-alura-lingua').style.display = 'block';
+}
+// Fechar o Card Expandido do Alura Língua 
+function fechar_alura_lingua(){
+    fechar_fundo();
+    document.querySelector('#card-alura-lingua').style.display = 'none';
+}
+
+// Abrir o Card Expandido do Alura
+function abrir_alura(){
+    abrir_fundo();
+    document.querySelector('#card-alura').style.display = 'block';
+}
+// Fechar o Card Expandido do Alura 
+function fechar_alura(){
+    fechar_fundo();
+    document.querySelector('#card-alura').style.display = 'none';
+}
+
+// Abrir o Card Expandido do Uninter 
+function abrir_uninter(){
+    abrir_fundo();
+    document.querySelector('#card-uninter').style.display = 'block';
+}
+// Fechar o Card Expandido do Uninter 
+function fechar_uninter(){
+    fechar_fundo();
+    document.querySelector('#card-uninter').style.display = 'none';
+}
+
+// Abrir o Card Expandido da Cisco
+function abrir_cisco(){
+    abrir_fundo();
+    document.querySelector('#card-cisco').style.display = 'block';
+}
+// Fechar o Card Expandido da Cisco 
+function fechar_cisco(){
+    fechar_fundo();
+    document.querySelector('#card-cisco').style.display = 'none';
+}
