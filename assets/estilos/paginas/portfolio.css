@@ -1,6 +1,6 @@
 .card-portfolio {
     width: 262px;
-    height: 200px;
+    height: 190px;
     margin: 1rem auto;
     border-radius: 1em;
     border: 1px solid #777;
@@ -13,7 +13,7 @@
 
 .card-apresentacao {
     width: 262px;
-    height: 100px;
+    height: 90px;
     border-radius: 1em 5em 1em 1em;
     color: var(--cor-principal);
     background-color: #000000cc;
@@ -22,9 +22,20 @@
 
 .card-apresentacao > .titulo {
     font-size: 1rem;
+    margin-left: .5rem;
     padding: .5em;
 }
-.card-apresentacao > .paragrafo {
+
+.alinhamento {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 .5rem;
+}
+
+.alinhamento > .paragrafo {
     font-size: .7rem;
     padding: 0 .7em;
 }
@@ -35,8 +46,8 @@
     padding: .4rem;
     border-radius: .5rem;
     font-family: var(--fonte-principal);
+    font-size: .5rem;
     margin-top: 1rem;
-    margin-left: 11rem;
 }
 
 .sebo-digital {
