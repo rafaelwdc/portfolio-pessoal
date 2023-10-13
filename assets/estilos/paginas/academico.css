@@ -1,4 +1,6 @@
-.banner {
+/* Cards das instuições onde estudei */
+
+.card-academico {
     width: 262px;
     height: 146px;
     margin: 0 auto .5rem;
@@ -8,7 +10,7 @@
     margin: 0 auto;
 }
 
-.banner > .titulo {
+.card-academico > .titulo {
     font-family: var(--fonte-principal);
     color: var(--cor-principal);
     text-align: left;
@@ -38,6 +40,11 @@
     border-radius: 4px;
     padding: 0 .5rem;
     padding-top: .5rem;
+}
+
+
+.card-academico-modal {
+    width: 100%;
 }
 
 .curso-em-video {
@@ -76,27 +83,30 @@
 
 }
 
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
 .lista {
+    margin-top: 1rem;
     width: 246px;
     background-color: var(--cor-secundaria);
     color: var(--cor-principal);
     padding: .5em;
-    margin: 0 auto;
+    margin: 1.3rem auto 0;
 }
 
-.botao-voltar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
+
 
 
 @media (min-width: 375px) {
-    .banner {
+    .card-academico {
         width: 308px;
         height: 170px;
     }
-    .banner>.titulo {
+    .card-academico > .titulo {
         padding-top: 5rem;
         font-size: 2rem;
     }
@@ -106,11 +116,11 @@
 }
 
 @media (min-width: 425px) {
-    .banner {
+    .card-academico {
         width: 348px;
         height: 190px;
     }
-    .banner>.titulo {
+    .card-academico>.titulo {
         padding-top: 5rem;
         font-size: 2.3rem;
     }
@@ -120,7 +130,7 @@
 }
 
 @media (min-width: 768px) {
-    .banner {
+    .card-academico {
         width: 308px;
         height: 170px;
     }
