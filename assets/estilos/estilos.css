@@ -71,6 +71,7 @@
     margin: 0 auto;
     position: absolute;
     top: 11%;
+    left: 9%;
     background-color: var(--cor-principal);
     z-index: 99;
     display: none;
