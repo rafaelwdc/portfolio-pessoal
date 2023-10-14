@@ -27,7 +27,7 @@
     margin: 0 .5rem;
 }
 
-.apresentacao-card-academico>.paragrafo {
+.apresentacao-card-academico > .paragrafo {
     font-size: .8rem;
     color: var(--cor-tercearia);
 }
