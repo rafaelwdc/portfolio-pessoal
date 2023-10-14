@@ -3,14 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
 /* Importando estilos padrões de todas as páginas */
-@import url(default/textos.css);
+
 /* Formatação de textos padrão de todas as páginas */
-@import url(default/cabecalho.css);
+@import url(default/textos.css);
 /* Formatação do cabeçalho de todas as páginas */
-@import url(default/menu-hamburguer.css);
+@import url(default/cabecalho.css);
 /* Formatação do menu hamburguer de todas as páginas */
-@import url(default/rodape.css);
+@import url(default/menu-hamburguer.css);
+/* Formatação dos cards de todas as páginas */
+@import url(default/card.css);
+/* Formatação dos botões de todas as páginas */
+@import url(default/botao.css);
 /* Formatação do rodapé de todas as páginas */
+@import url(default/rodape.css);
 
 /* Importando estilos das páginas */
 @import url(paginas/index.css);
