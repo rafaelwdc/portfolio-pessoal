@@ -54,253 +54,247 @@
         <h1 class="titulo esquerda">Onde estudei</h1>
         <!-- A Seção apresentará todos os Cards Minimizados, e os Cards Expandidos com mais informações sobre a instituição abrirá quando o usuário clicar no botão Saiba Mais contido em cada um deles -->
 
-        <!-- Card Minimizado | Curso em Vídeo -->
-        <div class="card-academico curso-em-video">
-            <!-- Título do Card -->
-            <h2 class="titulo">Curso em Vídeo</h2>
-            <!-- Apresentação de um breve texto e logo ao lado um botão para expandir o Card -->
-            <div class="apresentacao-card-academico">
-                <!-- Breve Texto sobre a instituição -->
-                <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
-                <!-- Botão para expandir o card, abrirá um Card com mais informações -->
-                <a href="#" class="botao-card-academico abrir" onclick="abrir_curso_em_video();">Saiba Mais</a>
-
-                <div id="fundo"></div>
-                <!-- Essa div ficará responsável por escurecer a tela ao exibir o card expandido -->
-
-                <!-- Card Expandido | Curso em Vídeo -->
-                <div id="card-curso-em-video">
-                    <!-- Botão para voltar à apresentação de Cards -->
-                    <a href="#" class="botao-voltar fechar" onclick="fechar_curso_em_video();">
-                        <div class="botao-voltar">
-                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
-                            <p class="paragrafo">Voltar</p>
+        <div class="grid">
+            <!-- Card Minimizado | Curso em Vídeo -->
+            <div class="card-academico curso-em-video">
+                <!-- Título do Card -->
+                <h2 class="titulo">Curso em Vídeo</h2>
+                <!-- Apresentação de um breve texto e logo ao lado um botão para expandir o Card -->
+                <div class="alinhamento">
+                    <!-- Breve Texto sobre a instituição -->
+                    <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
+                    <!-- Botão para expandir o card, abrirá um Card com mais informações -->
+                    <a href="#" class="botao-card abrir" onclick="abrir_curso_em_video();">Saiba Mais</a>
+                    <div id="fundo"></div>
+                    <!-- Essa div ficará responsável por escurecer a tela ao exibir o card expandido -->
+                    <!-- Card Expandido | Curso em Vídeo -->
+                    <div id="pop-up-curso-em-video">
+                        <!-- Botão para voltar à apresentação de Cards -->
+                        <a href="#" class="botao-voltar fechar" onclick="fechar_curso_em_video();">
+                            <div class="botao-voltar">
+                                <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                                <p class="paragrafo">Voltar</p>
+                            </div>
+                        </a>
+                        <div class="card-academico curso-em-video">
+                            <h2 class="titulo">Curso em Vídeo</h2>
+                            <div class="apresentacao-card-academico">
+                                <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
+                            </div>
+                            <ul class="lista">
+                                <li>
+                                    <p class="paragrafo">Lançado em 2013, o projeto de ensinar tecnologia à distância foi
+                                        ganhando forma e hoje já conta com milhares de alunos inscritos e uma grande
+                                        quantidade de material gratuito.</p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Cursos Concluídos:</p>
+                                </li>
+                                <li class="item-lista">
+                                    <p class="paragrafo">→ HTML5 e CSS3: Módulo 1 de 5;</p>
+                                </li>
+                                <li class="item-lista">
+                                    <p class="paragrafo">→ HTML5 e CSS3: Módulo 2 de 5;</p>
+                                </li>
+                                <li class="item-lista">
+                                    <p class="paragrafo">→ HTML5 e CSS3: Módulo 3 de 5;</p>
+                                </li>
+                                <li class="item-lista">
+                                    <p class="paragrafo">Infelizmente ainda não foi gerado nenhum certificado desses cursos concluídos, mas assim que estiver em mãos, estarei disponibilizando o link por aqui.</p>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
-                    <div class="card-academico curso-em-video">
-                        <h2 class="titulo">Curso em Vídeo</h2>
-                        <div class="apresentacao-card-academico">
-                            <p class="paragrafo">Cursos de Tecnologia desenvolvidos pelo<br>Prof.º Gustavo Guanabara</p>
-                        </div>
-                        <ul class="lista">
-                            <li>
-                                <p class="paragrafo">Lançado em 2013, o projeto de ensinar tecnologia à distância foi
-                                    ganhando forma e hoje já conta com milhares de alunos inscritos e uma grande
-                                    quantidade de material gratuito.</p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">Cursos Concluídos:</p>
-                            </li>
-                            <li class="item-lista">
-                                <p class="paragrafo">→ HTML5 e CSS3: Módulo 1 de 5;</p>
-                            </li>
-                            <li class="item-lista">
-                                <p class="paragrafo">→ HTML5 e CSS3: Módulo 2 de 5;</p>
-                            </li>
-                            <li class="item-lista">
-                                <p class="paragrafo">→ HTML5 e CSS3: Módulo 3 de 5;</p>
-                            </li>
-                            <li class="item-lista">
-                                <p class="paragrafo">Infelizmente ainda não foi gerado nenhum certificado desses cursos concluídos, mas assim que estiver em mãos, estarei disponibilizando o link por aqui.</p>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Card Minimizado | Alura Língua -->
-
-        <div class="card-academico alura-lingua">
-            <h2 class="titulo">Alura Língua</h2>
-            <div class="apresentacao-card-academico">
-                <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
-                <a href="#" class="botao-card-academico abrir" onclick="abrir_alura_lingua();">Saiba Mais</a>
-                <div id="fundo"></div>
-                <div id="card-alura-lingua">
-                    <a href="#" class="botao-voltar fechar" onclick="fechar_alura_lingua();">
-                        <div class="botao-voltar">
-                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
-                            <p class="paragrafo">Voltar</p>
+            <!-- Card Minimizado | Alura Língua -->
+            <div class="card-academico alura-lingua">
+                <h2 class="titulo">Alura Língua</h2>
+                <div class="alinhamento">
+                    <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
+                    <a href="#" class="botao-card abrir" onclick="abrir_alura_lingua();">Saiba Mais</a>
+                    <div id="fundo" class="fundo-pop-up"></div>
+                    <div id="pop-up-alura-lingua">
+                        <a href="#" class="botao-voltar fechar" onclick="fechar_alura_lingua();">
+                            <div class="botao-voltar">
+                                <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                                <p class="paragrafo">Voltar</p>
+                            </div>
+                        </a>
+                        <div class="card-academico alura-lingua">
+                            <h2 class="titulo">Alura Língua</h2>
+                            <div class="apresentacao-card-academico">
+                                <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
+                            </div>
+                            <ul class="lista">
+                                <li>
+                                    <p class="paragrafo">Escola de Inglês oferecido pela maior plataforma de ensino de tecnologia do país, oferece cursos de inglês e espanhol, do basico ao avançado, incluindo também o inglês para devs, para fomar novos desenvolvedores bilingue ou trilingue.</p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Cursos Concluídos:</p>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Inglês Iniciante - Comunicação essencial → <a target="_blank" href="https://cursos.aluralingua.com.br/user/rafaelwdc/module/ingles-iniciante/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Inglês Básico - Conversando em uma viagem → <a target="_blank" href="https://cursos.aluralingua.com.br/user/rafaelwdc/module/ingles-basico/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Inglês Pré-intermediário - Sobrevivendo em outro país → <a target="_blank" href="https://cursos.aluralingua.com.br/user/rafaelwdc/module/ingles-pre-intermediario/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Ou se preferir o certificado completo com todas as informações sobre os cursos que eu completei na plataforma → <a href="https://cursos.aluralingua.com.br/user/rafaelwdc/fullCertificate/d8fc2d84fd1bf7aa39f1fb76131b3fb0" target="_blank" rel="noopener noreferrer" class="link-certificado">Certificado.</a></p>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
-                    <div class="card-academico alura-lingua">
-                        <h2 class="titulo">Alura Língua</h2>
-                        <div class="apresentacao-card-academico">
-                            <p class="paragrafo">Cursos de Inglês com o foco para novos<br>desenvolvedores</p>
-                        </div>
-                        <ul class="lista">
-                            <li>
-                                <p class="paragrafo">Escola de Inglês oferecido pela maior plataforma de ensino de tecnologia do país, oferece cursos de inglês e espanhol, do basico ao avançado, incluindo também o inglês para devs, para fomar novos desenvolvedores bilingue ou trilingue.</p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">Cursos Concluídos:</p>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Inglês Iniciante - Comunicação essencial → <a target="_blank" href="https://cursos.aluralingua.com.br/user/rafaelwdc/module/ingles-iniciante/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Inglês Básico - Conversando em uma viagem → <a target="_blank" href="https://cursos.aluralingua.com.br/user/rafaelwdc/module/ingles-basico/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Inglês Pré-intermediário - Sobrevivendo em outro país → <a target="_blank" href="https://cursos.aluralingua.com.br/user/rafaelwdc/module/ingles-pre-intermediario/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ ou se preferir o certificado completo com todas as informações sobre os cursos que eu completei na plataforma → <a href="https://cursos.aluralingua.com.br/user/rafaelwdc/fullCertificate/d8fc2d84fd1bf7aa39f1fb76131b3fb0" target="_blank" rel="noopener noreferrer">Certificado.</a></p>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Card Minimizado | Alura -->
-
-        <div class="card-academico alura">
-            <h2 class="titulo">Alura</h2>
-            <div class="apresentacao-card-academico">
-                <p class="paragrafo">Cursos de Tecnologia desenvolvidos pela<br>maior escola de Tecnologia do país</p>
-                <a href="#" class="botao-card-academico abrir" onclick="abrir_alura();">Saiba Mais</a>
-                <div id="fundo"></div>
-                <div id="card-alura">
-                    <a href="#" class="botao-voltar fechar" onclick="fechar_alura();">
-                        <div class="botao-voltar">
-                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
-                            <p class="paragrafo">Voltar</p>
+            <!-- Card Minimizado | Alura -->
+            <div class="card-academico alura">
+                <h2 class="titulo">Alura</h2>
+                <div class="alinhamento">
+                    <p class="paragrafo">Cursos de Tecnologia desenvolvidos pela<br>maior escola de Tecnologia do país</p>
+                    <a href="#" class="botao-card abrir" onclick="abrir_alura();">Saiba Mais</a>
+                    <div id="fundo"></div>
+                    <div id="pop-up-alura">
+                        <a href="#" class="botao-voltar fechar" onclick="fechar_alura();">
+                            <div class="botao-voltar">
+                                <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                                <p class="paragrafo">Voltar</p>
+                            </div>
+                        </a>
+                        <div class="card-academico alura">
+                            <h2 class="titulo">Alura</h2>
+                            <div class="apresentacao-card-academico">
+                            </div>
+                            <ul class="lista">
+                                <li>
+                                    <p class="paragrafo">Escola de Tecnologia oferecido pela maior plataforma de ensino do país, oferece cursos de programação, mobile, UX e UI, desenvolvimento humano entre outros, todos focados em ensinar a fundo cada área do universo da TI.</p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Cursos Concluídos:</p>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Iniciante em Programação → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-programacao-v123948-123948/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ HTML e CSS → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-html-e-css-v232036-232036/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ TypeScript → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-typescript-309729/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ JavaScript para Back-end → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-js-backend-210587/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Android com Java → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-android-233/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Linguagem Kotlin → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-kotlin-v68329-68329/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Acessibilidade → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-acessibilidade-web-v2346-2346/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ CSS Aprofundado → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-css-estilos-445565/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Front-end → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-front-end-113709/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ JavaScript para Front-end → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-javascript-front-end-v374365-374365/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ React com JavaScript → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-react-javascript-v450960-450960/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ React com TypeScript → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-react-ts-v361293-361293/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Figma → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-figma-v459428-459428/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Aprendizagem → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-aprendizagem-v370782-370782/certificate" class="link-certificado">Certificado.</a></p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Ou se preferir o certificado completo com todas as informações sobre os cursos que eu completei na plataforma → <a href="https://cursos.alura.com.br/user/rafaelwdc/fullCertificate/13f3d8a9c3becbba19b9a5a13dd1d1ea" target="_blank" rel="noopener noreferrer" class="link-certificado">Certificado.</a></p>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
-                    <div class="card-academico alura">
-                        <h2 class="titulo">Alura</h2>
-                        <div class="apresentacao-card-academico">
-                        </div>
-                        <ul class="lista">
-                            <li>
-                                <p class="paragrafo">Escola de Tecnologia oferecido pela maior plataforma de ensino do país, oferece cursos de programação, mobile, UX e UI, desenvolvimento humano entre outros, todos focados em ensinar a fundo cada área do universo da TI.</p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">Cursos Concluídos:</p>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Iniciante em Programação → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-programacao-v123948-123948/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ HTML e CSS → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-html-e-css-v232036-232036/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ TypeScript → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-typescript-309729/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ JavaScript para Back-end → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-js-backend-210587/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Android com Java → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-android-233/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Linguagem Kotlin → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-kotlin-v68329-68329/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Acessibilidade → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-acessibilidade-web-v2346-2346/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ CSS Aprofundado → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-css-estilos-445565/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Front-end → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-front-end-113709/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ JavaScript para Front-end → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-javascript-front-end-v374365-374365/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ React com JavaScript → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-react-javascript-v450960-450960/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ React com TypeScript → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-react-ts-v361293-361293/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Figma → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-figma-v459428-459428/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Aprendizagem → <a target="_blank" href="https://cursos.alura.com.br/user/rafaelwdc/degree-aprendizagem-v370782-370782/certificate" class="link-certificado">Certificado.</a></p><br>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Card Minimizado | Uninter -->
-
-        <div class="card-academico uninter">
-            <h2 class="titulo">Uninter</h2>
-            <div class="apresentacao-card-academico">
-                <p class="paragrafo">Universidade na qual estou cursando <br>Análise e Desenvolvimento de Sistemas</p>
-                <a href="#" class="botao-card-academico abrir" onclick="abrir_uninter();">Saiba Mais</a>
-                <div id="fundo"></div>
-                <div id="card-uninter">
-                    <a href="#" class="botao-voltar fechar" onclick="fechar_uninter();">
-                        <div class="botao-voltar">
-                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
-                            <p class="paragrafo">Voltar</p>
+            <!-- Card Minimizado | Uninter -->
+            <div class="card-academico uninter">
+                <h2 class="titulo">Uninter</h2>
+                <div class="alinhamento">
+                    <p class="paragrafo">Universidade na qual estou cursando <br>Análise e Desenvolvimento de Sistemas</p>
+                    <a href="#" class="botao-card abrir" onclick="abrir_uninter();">Saiba Mais</a>
+                    <div id="fundo"></div>
+                    <div id="pop-up-uninter">
+                        <a href="#" class="botao-voltar fechar" onclick="fechar_uninter();">
+                            <div class="botao-voltar">
+                                <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                                <p class="paragrafo">Voltar</p>
+                            </div>
+                        </a>
+                        <div class="card-academico uninter">
+                            <h2 class="titulo">Uninter</h2>
+                            <div class="apresentacao-card-academico">
+                                <p class="paragrafo">Universidade na qual estou cursando <br>Análise e Desenvolvimento de
+                                    Sistemas</p>
+                            </div>
+                            <ul class="lista">
+                                <li>
+                                    <p class="paragrafo">Uninter é uma das maiores universidades do país, tem se destacado no campo de ensino à distância, e em tempos onde o home office está em alta, a instituição tem sido uma grande rota de fuga para os mais ansiosos poderem ocupar a cabeça.</p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Cursos em andamento:</p>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ CTS - Análise e Desenvolvimento de Sistemas</p>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Ubest - Curso de Inglês</p>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
-                    <div class="card-academico uninter">
-                        <h2 class="titulo">Uninter</h2>
-                        <div class="apresentacao-card-academico">
-                            <p class="paragrafo">Universidade na qual estou cursando <br>Análise e Desenvolvimento de
-                                Sistemas</p>
-                        </div>
-                        <ul class="lista">
-                            <li>
-                                <p class="paragrafo">Uninter é uma das maiores universidades do país, tem se destacado no campo de ensino à distância, e em tempos onde o home office está em alta, a instituição tem sido uma grande rota de fuga para os mais ansiosos poderem ocupar a cabeça.</p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">Cursos em andamento:</p>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ CTS - Análise e Desenvolvimento de Sistemas</p>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Ubest - Curso de Inglês</p>
-                            </li>
-
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Card Minimizado | Cisco -->
-
-        <div class="card-academico cisco">
-            <h2 class="titulo">Cisco Network Academy</h2>
-            <div class="apresentacao-card-academico">
-                <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma das maiores empresas do mundo</p>
-                <a href="#" class="botao-card-academico abrir" onclick="abrir_cisco();">Saiba Mais</a>
-                <div id="fundo"></div>
-                <div id="card-cisco">
-                    <a href="#" class="botao-voltar fechar" onclick="fechar_cisco();">
-                        <div class="botao-voltar">
-                            <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
-                            <p class="paragrafo">Voltar</p>
+            <!-- Card Minimizado | Cisco -->
+            <div class="card-academico cisco">
+                <h2 class="titulo">Cisco Network Academy</h2>
+                <div class="alinhamento">
+                    <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma das maiores empresas do mundo</p>
+                    <a href="#" class="botao-card abrir" onclick="abrir_cisco();">Saiba Mais</a>
+                    <div id="fundo"></div>
+                    <div id="pop-up-cisco">
+                        <a href="#" class="botao-voltar fechar" onclick="fechar_cisco();">
+                            <div class="botao-voltar">
+                                <img src="../../assets/imagens/icones/voltar.svg" alt="Botão de voltar">
+                                <p class="paragrafo">Voltar</p>
+                            </div>
+                        </a>
+                        <div class="card-academico cisco">
+                            <h2 class="titulo">Cisco Academy</h2>
+                            <div class="apresentacao-card-academico">
+                                <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma das maiores empresas do
+                                    mundo</p>
+                            </div>
+                            <ul class="lista">
+                                <li>
+                                    <p class="paragrafo">Escola de Tecnologia de uma das maiores empresas do mundo e que se destaca por oferecer de forma gratúita cursos de tecnologia das mais diferentes áreas do conhecimento humano.</p><br>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">Cursos Concluídos:</p>
+                                </li>
+                                <li>
+                                    <p class="paragrafo">→ Fundamentos Python 1</p>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
-                    <div class="card-academico cisco">
-                        <h2 class="titulo">Cisco Academy</h2>
-                        <div class="apresentacao-card-academico">
-                            <p class="paragrafo">Cursos de Tecnologia oferecidos por<br>uma das maiores empresas do
-                                mundo</p>
-                        </div>
-                        <ul class="lista">
-                            <li>
-                                <p class="paragrafo">Escola de Tecnologia de uma das maiores empresas do mundo e que se destaca por oferecer de forma gratúita cursos de tecnologia das mais diferentes áreas do conhecimento humano.</p><br>
-                            </li>
-                            <li>
-                                <p class="paragrafo">Cursos Concluídos:</p>
-                            </li>
-                            <li>
-                                <p class="paragrafo">→ Fundamentos Python 1</p>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
