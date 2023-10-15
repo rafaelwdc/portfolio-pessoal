@@ -53,26 +53,9 @@
     height: fit-content;
 }
 
-#fundo {
-    opacity: 0.8;
-    background-color: var(--cor-secundaria);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 98;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-#card-curso-em-video, #card-alura-lingua, #card-alura, #card-uninter, #card-cisco {
-    width: 262px;
-    height: 150px;
-    margin: 0 auto;
-    position: absolute;
-    top: 11%;
-    left: 9%;
-    background-color: var(--cor-principal);
-    z-index: 99;
-    display: none;
+@media (min-width: 425px) {
+    .secao {
+        display: flex;
+        flex-direction: column;
+    }
 }
