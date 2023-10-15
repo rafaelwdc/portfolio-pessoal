@@ -10,42 +10,29 @@
     margin: 0 auto;
 }
 
-.card-academico > .titulo {
+.card-academico>.titulo {
     font-family: var(--fonte-principal);
     color: var(--cor-principal);
-    text-align: left;
-    padding-top: 4.7rem;
-    font-size: 1.5rem;
     margin-left: .5rem;
+    text-align: left;
+    font-size: 1.5rem;
 }
 
-.apresentacao-card-academico {
+.alinhamento {
     display: flex;
     flex-direction: row;
-    width: 95%;
     justify-content: space-between;
-    margin: 0 .5rem;
 }
-
-.apresentacao-card-academico > .paragrafo {
+.alinhamento > .botao-card {
+    position: relative;
+    right: .5rem;
+}
+.alinhamento>.paragrafo {
     font-size: .8rem;
     color: var(--cor-tercearia);
 }
 
-.botao-card-academico {
-    font-family: var(--fonte-principal);
-    font-size: .8rem;
-    background-color: var(--cor-principal);
-    margin-left: 3rem;
-    border-radius: 4px;
-    padding: 0 .5rem;
-    padding-top: .5rem;
-}
 
-
-.card-academico-modal {
-    width: 100%;
-}
 
 .curso-em-video {
     background: url(../../imagens/card-academico/bg-card-curso-em-video.png);
@@ -93,13 +80,44 @@
     margin-top: 1rem;
     width: 246px;
     background-color: var(--cor-secundaria);
-    color: var(--cor-principal);
+    color: var(--cor-tercearia);
     padding: .5em;
     margin: 1.3rem auto 0;
 }
 
+.link-certificado {
+    font-weight: bold;
+    color: var(--cor-principal);
+}
 
 
+.fundo-pop-up {
+    opacity: 0.8;
+    background-color: var(--cor-secundaria);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#pop-up-curso-em-video,
+#pop-up-alura-lingua,
+#pop-up-alura,
+#pop-up-uninter,
+#pop-up-cisco {
+    width: 262px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 11%;
+    left: 9%;
+    background-color: var(--cor-principal);
+    z-index: 99;
+    display: none;
+}
 
 
 @media (min-width: 375px) {
@@ -107,12 +125,26 @@
         width: 308px;
         height: 170px;
     }
-    .card-academico > .titulo {
+
+    .card-academico>.titulo {
         padding-top: 5rem;
         font-size: 2rem;
     }
-    .apresentacao-card-academico>.paragrafo {
+
+    .alinhamento>.paragrafo {
         font-size: 1rem;
+    }
+
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        width: 308px;
+    }
+
+    .lista {
+        width: 292px;
     }
 }
 
@@ -121,12 +153,25 @@
         width: 348px;
         height: 190px;
     }
+
     .card-academico>.titulo {
         padding-top: 5rem;
         font-size: 2.3rem;
     }
-    .apresentacao-card-academico>.paragrafo {
+
+    .alinhamento>.paragrafo {
         font-size: 1.3rem;
+    }
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        width: 348px;
+    }
+
+    .lista {
+        width: 332px;
     }
 }
 
@@ -141,13 +186,22 @@
         font-size: .5rem;
     }
 
-    .academico {
-        display: grid;
-        justify-content: space-around;
-        grid-template-columns: 310px 310px;
-    }
-
     .apresentacao-academico {
         margin: 0 auto;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .card-academico>.titulo {
+        padding-top: 4.6rem;
+        font-size: 2rem;
+    }
+
+    .alinhamento>.paragrafo {
+        font-size: 1.01rem;
+    }
+
 }
