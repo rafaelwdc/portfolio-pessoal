@@ -1,3 +1,5 @@
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
+
 .cabecalho {
     box-sizing: border-box;
     position: fixed;
