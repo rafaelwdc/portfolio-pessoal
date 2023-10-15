@@ -1,6 +1,111 @@
 /* ------------### Card Acadêmico ###------------ */
 
+/* ### Card Minimizado ### */
 
+/* Espaçamento do fundo dos Cards */
+.card-academico {
+    width: 262px;
+    height: 146px;
+    margin: 0 auto .5rem;
+}
+
+/* Estilização do título dos Cards */
+.card-academico>.titulo-card {
+    color: var(--cor-principal);
+    padding: 4rem 0 0 1rem;
+}
+
+/* Estilização do botão do Card Minimizado */
+.card-academico>.alinhamento>.botao-card {
+    margin-left: 4rem;
+}
+
+/* Fundo dos Cards personalizados e seus alinhamentos */
+.curso-em-video {
+    background: url(../../imagens/card-academico/bg-card-curso-em-video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.alura {
+    background: url(../../imagens/card-academico/bg-card-alura.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.alura-lingua {
+    background: url(../../imagens/card-academico/bg-card-aluralingua.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.uninter {
+    background: url(../../imagens/card-academico/bg-card-uninter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cisco {
+    background: url(../../imagens/card-academico/bg-card-cisco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ### Card Expandido ### */
+
+/* Espaçamento do fundo do Card Expandido */
+#pop-up-curso-em-video,
+#pop-up-alura-lingua,
+#pop-up-alura,
+#pop-up-uninter,
+#pop-up-cisco {
+    width: 262px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 11%;
+    left: 9%;
+    background-color: var(--cor-principal);
+    z-index: 99;
+    display: none;
+}
+
+/* Fundo do site, que fica fora dos limites do Card Expandido quando ele for acionado */
+.fundo-pop-up {
+    opacity: 0.9;
+    background-color: var(--cor-secundaria);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+/* Estilização do parágrafo do Card Expandido */
+.card-academico>.paragrafo-card {
+    color: var(--cor-tercearia);
+    margin-left: 1rem;
+}
+
+/* Lista do Card expandido */
+.lista {
+    margin-top: 1rem;
+    width: 246px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-tercearia);
+    padding: .5em;
+    margin: 1.3rem auto 0;
+}
+
+/* Estilização do link */
+.link-certificado {
+    font-weight: bold;
+    color: var(--cor-principal);
+}
 
 
 /* ------------### Card Portfólio ###------------ */
