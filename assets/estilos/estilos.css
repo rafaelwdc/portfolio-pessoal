@@ -12,6 +12,8 @@
 @import url(default/menu-hamburguer.css);
 /* Formatação dos cards de todas as páginas */
 @import url(default/card.css);
+/* Formatação do alinhamento dos botões e textos nos cards de todas as páginas */
+@import url(default/alinhamento.css);
 /* Formatação dos botões de todas as páginas */
 @import url(default/botao.css);
 /* Formatação do rodapé de todas as páginas */
