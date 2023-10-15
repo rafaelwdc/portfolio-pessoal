@@ -1,0 +1,14 @@
+.botao-card {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: .5949rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
