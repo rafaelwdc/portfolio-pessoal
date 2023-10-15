@@ -1,36 +1,44 @@
-/* Mobile P 320 x */
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
 
+/* Adicionando a fonte correta para os todos os textos */
 .titulo, .titulo-card, .paragrafo, .paragrafo-card {
     font-family: var(--fonte-principal);
 }
 
+/* Adicionando o tamanho dos títulos default */
 .titulo {
     font-size: 2rem;
 }
 
+/* Adicionando o tamanho dos títulos do cards default */
 .titulo-card {
     font-size: 1.5rem;
     color: var(--cor-principal);
 }
 
+/* Adicionando o tamanho dos parágrafos default */
 .paragrafo {
     font-size: 1.25rem;
     text-align: justify;
 }
 
+/* Adicionando o tamanho dos parágrafos do cards default */
 .paragrafo-card {
-    font-size: .7rem;
+    font-size: .79rem;
     color: var(--cor-tercearia);
 }
 
-strong {
-    font-weight: bold;
+/* Adicionando um peso maior a fonte */
+.peso-forte {
+    font-weight: bolder;
 }
 
-.thin {
+/* Adicionando um peso menor a fonte */
+.peso-fraco {
     font-weight: 300;
 }
 
+/* Posiciona textos à esquerda */
 .esquerda {
     text-align: start;
 }
