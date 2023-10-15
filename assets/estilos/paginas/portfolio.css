@@ -26,14 +26,14 @@
     padding: .5em;
 }
 
-.alinhamento {
+/* .alinhamento {
     display: flex;
     flex-direction: row;
     width: 90%;
     align-items: baseline;
     justify-content: space-between;
     margin: 0 .5rem;
-}
+} */
 
 .alinhamento > .paragrafo {
     font-size: .7rem;
@@ -43,7 +43,7 @@
 .botao-card {
     background-color: var(--cor-principal);
     color: var(--cor-secundaria);
-    padding: .4rem;
+    padding: .5rem;
     border-radius: .5rem;
     font-family: var(--fonte-principal);
     font-size: .5rem;
@@ -70,25 +70,28 @@
 @media (min-width: 375px) {
     .card-portfolio  {
         width: 308px;
-        height: 200px;
+        height: 210px;
     }
     .card-apresentacao {
         width: 308px;
+        height: 110px;
     }
-    .botao-card {
-        margin-left: 14rem;
+    
+    .card-apresentacao > .titulo {
+        font-size: 1.5rem;
+    }
+    .alinhamento > .paragrafo {
+        font-size: 1rem;
+
     }
 }
 @media (min-width: 425px) {
     .card-portfolio {
         width: 348px;
-        height: 200px;
+        height: 190px;
     }
     .card-apresentacao {
         width: 348px;
-    }
-    .botao-card {
-        margin-left: 16rem;
     }
 }
 
