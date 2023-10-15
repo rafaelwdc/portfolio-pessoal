@@ -1,3 +1,5 @@
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
+
 @media (max-width: 768px) {
     /* Posiciona o menu hamburguer do lado esquerdo e a logo do lado direito para as telas mobile e Tablet */
     .cabecalho {
@@ -18,14 +20,14 @@
         overflow-y: hidden;
     }
     
-    /* Tamanho e Animação do menu navegação */
+    /* Tamanho e Animação do menu navegação do menu hamburguer */
     #nav.active .menu {
         height: 15.7rem;
         visibility: visible;
         overflow-y: auto;
     }
     
-    /* Item do menu navegação*/
+    /* Itens do menu navegação e animação de quando o mouse estiver sobre o ítem */
     .menu a {
         padding: 1rem 0;
         margin: 0 1rem;
@@ -37,7 +39,7 @@
         color: var(--cor-secundaria);
     }
     
-    /* Estiliza o botão do menu hamburguer */  
+    /* Estiliza o menu hamburguer */  
     .menu-hamburguer {
         display: flex;
         padding: 0.5em 1rem;
