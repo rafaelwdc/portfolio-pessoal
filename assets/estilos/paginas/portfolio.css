@@ -1,71 +1,4 @@
-.card-portfolio {
-    width: 262px;
-    height: 190px;
-    margin: 1rem auto;
-    border-radius: 1em;
-    border: 1px solid #777;
-}
 
-.transparente {
-    width: 262px;
-    height: 100px;
-}
-
-.card-apresentacao {
-    width: 262px;
-    height: 90px;
-    border-radius: 1em 5em 1em 1em;
-    color: var(--cor-principal);
-    background-color: #000000cc;
-    border: 1px solid #777;
-}
-
-.card-apresentacao > .titulo {
-    font-size: 1rem;
-    margin-left: .5rem;
-    padding: .5em;
-}
-
-/* .alinhamento {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: baseline;
-    justify-content: space-between;
-    margin: 0 .5rem;
-} */
-
-.alinhamento > .paragrafo {
-    font-size: .7rem;
-    padding: 0 .7em;
-}
-
-.botao-card {
-    background-color: var(--cor-principal);
-    color: var(--cor-secundaria);
-    padding: .5rem;
-    border-radius: .5rem;
-    font-family: var(--fonte-principal);
-    font-size: .5rem;
-    margin-top: 1rem;
-}
-
-.sebo-digital {
-    background: url(../../imagens/card-portfolio/sebo-digital.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.sorteador {
-    background: url(../../imagens/card-portfolio/sorteador.png);
-    background-size: cover;
-}
-
-.orkut {
-    background: url(../../imagens/card-portfolio/orkut.png);
-    background-size: cover;
-    background-position: center;
-}
 
 @media (min-width: 375px) {
     .card-portfolio  {
@@ -85,6 +18,7 @@
 
     }
 }
+
 @media (min-width: 425px) {
     .card-portfolio {
         width: 348px;
