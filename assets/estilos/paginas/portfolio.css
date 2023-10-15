@@ -1,6 +1,10 @@
 
 
 @media (min-width: 375px) {
+    .transparente {
+        height: 100px;
+    }
+    
     .card-portfolio  {
         width: 308px;
         height: 210px;
