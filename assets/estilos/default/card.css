@@ -1,3 +1,5 @@
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
+
 /* ------------### Card Acadêmico ###------------ */
 
 /* ### Card Minimizado ### */
@@ -17,7 +19,7 @@
 
 /* Estilização do botão do Card Minimizado */
 .card-academico>.alinhamento>.botao-card {
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 /* Fundo dos Cards personalizados e seus alinhamentos */
