@@ -41,6 +41,7 @@ function fechar_fundo() {
 // Abrir o Card Expandido do Curso em Vídeo 
 function abrir_curso_em_video(){
     abrir_fundo();
+    document.querySelector('#pop-up-curso-em-video').style.transition = 'block';
     document.querySelector('#pop-up-curso-em-video').style.display = 'block';
 }
 
@@ -93,3 +94,9 @@ function fechar_cisco(){
     fechar_fundo();
     document.querySelector('#pop-up-cisco').style.display = 'none';
 }
+const testando = document.querySelector('#pop-up-uninter')
+const teste = new IntersectionObserver( (entries) => {
+    console.log(entries);
+} )
+
+teste.observe(testando);
