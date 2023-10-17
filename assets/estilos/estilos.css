@@ -20,16 +20,16 @@
     --titulo-mobile: 1.5rem;
     --paragrafo-mobile: 1.25rem;
     --titulo-card-mobile: 1.25rem;
-    --paragrafo-card-mobile: .9rem;
+    --paragrafo-card-mobile: 1rem;
     /* --- Tablet --- */
     --titulo-tablet: 2rem;
     --paragrafo-tablet: 1.5rem;
     --titulo-card-tablet: 1.5rem;
-    --paragrafo-card-tablet: 2rem;
+    --paragrafo-card-tablet: 1rem;
     /* --- Desktop --- */
     --titulo-desktop: 1.5rem;
     --paragrafo-desktop: 1.25rem;
-    --titulo-card-desktop: 1.5rem;
+    --titulo-card-desktop: 1.25rem;
     --paragrafo-card-desktop: 2rem;
 }
 
@@ -206,21 +206,52 @@
     padding: 1rem;
 }
 
-@media (min-width: 374px) {
-    .secao {
-        min-width: 308;
-    }
+.rodape {
+    width: 100vw;
+    height: 120px;
+    background: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
 }
+
+.link-redes-sociais {
+    width: 42px;
+    margin: 1rem;
+}
+
+.rodape > .paragrafo {
+    font-size: 1rem;
+    margin: .1rem;
+}
+
+
 @media (min-width: 768px) {
    
+    .titulo {
+        font-size: var(--titulo-tablet);
+    }
+    .paragrafo {
+        font-size: var(--paragrafo-tablet);
+    }
+    
+    /* Textos dos cards */
+    .titulo-card {
+        font-size: var(--titulo-card-tablet);
+    }
+    .paragrafo-card {
+        font-size: var(--paragrafo-card-tablet);
+    }
+
     /* Cria a estilização do menu navegação */
     .cabecalho {
         flex-direction: row;
     }
 
-    .menu-hamburguer {
-        display: none;
-    }
     .hamburguer {
         display: none;
     }
@@ -260,34 +291,6 @@
         background-color: var(--cor-escura);
 
     }
-    
-}
-
-.rodape {
-    width: 100vw;
-    height: 120px;
-    background: var(--cor-principal);
-    font-family: var(--fonte-principal);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-}
-
-.link-redes-sociais {
-    width: 42px;
-    margin: 1rem;
-}
-
-.rodape > .paragrafo {
-    font-size: 1rem;
-    margin: .1rem;
-}
-
-@media (min-width: 768px) {
-    
     .rodape {
         height: 160px;
     }
@@ -298,7 +301,6 @@
     .link-redes-sociais {
         width: 55px;
     }
-
     .rodape > .paragrafo {
         font-size: 1.5rem;
     }
