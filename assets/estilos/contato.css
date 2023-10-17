@@ -1,0 +1,132 @@
+.container {
+    margin-top: 86px;
+    background-color: var(--cor-escura);
+    text-align: center;
+}
+
+.secao {
+    background-color: var(--cor-principal);
+    width: 82vw;
+    min-height: 56.5vh;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.titulo {
+    font-size: var(--titulo-mobile);
+}
+
+.paragrafo {
+    font-size: var(--paragrafo-mobile);
+}
+
+.esquerda {
+    text-align: start;
+}
+
+.contato-redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+.contato-link-redes-sociais {
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.campo, .mensagem {
+    width: 80vw;
+    margin: 1rem auto;
+}
+
+.linha-divisoria {
+    margin: 1rem 0;
+}
+
+.campo, .botao, .mensagem {
+    font-family: var(--fonte-principal);
+    box-shadow: 4px 4px 1px;
+}
+.mensagem {
+    height: 7rem;
+}
+
+.botao {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    color: var(--cor-principal);
+    background-color: var(--cor-escura);
+    border-radius: 8px;
+    margin-left: 70%;
+}
+
+@media (min-width: 426px) {
+    .linha-divisoria {
+        margin: 2.5rem 0;
+    }
+    .contato-img-redes-sociais {
+        width: 100px;
+    }
+    .campo, .mensagem {
+        width: 350px;
+    }
+
+    .campo {
+        height: 3rem;
+    }
+
+    .mensagem {
+        height: 10rem;
+    }
+
+    .botao {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .linha-divisoria {
+        margin: 4rem 0;
+    }
+}
+@media (min-width: 769px) {
+    .contato {
+        display: flex;  
+    }
+    .apresentacao-contatos > .titulo {
+        font-size: 1.5rem;
+    }
+
+    .linha-divisoria {
+        margin: 2.5rem 0;
+    }
+    .contato-redes-sociais {
+        margin-top: 1rem;
+    }
+    .redes-sociais {
+        margin-top: 5rem;
+    }
+
+    .contato-img-redes-sociais {
+        width: 60px;
+    }
+
+    .campo, .mensagem {
+        width: 300px;
+        margin: 0.5rem;
+    }
+
+    .campo {
+        height: 1.5rem;
+    }
+
+    .mensagem {
+        height: 7rem;
+    }
+
+    .botao {
+        padding: 1rem 1.5rem;
+    }
+}

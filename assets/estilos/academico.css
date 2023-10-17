@@ -1,0 +1,299 @@
+.container {
+    margin-top: 86px;
+    background-color: var(--cor-escura);
+    text-align: center;
+}
+
+.secao {
+    background-color: var(--cor-principal);
+    width: 82vw;
+    min-height: 56.5vh;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.titulo {
+    font-size: var(--titulo-mobile);
+}
+
+.paragrafo {
+    font-size: var(--paragrafo-mobile);
+}
+
+.titulo-card {
+    color: var(--cor-principal);
+    font-size: var(--titulo-card-mobile);
+}
+
+.paragrafo-card {
+    color: var(--cor-clara);
+    font-size: var(--paragrafo-card-mobile);
+}
+.esquerda {
+    text-align: start;
+}
+
+.card-academico>.titulo-card {
+    padding: 4rem 0 0 1rem;
+}
+.card-academico>.paragrafo-card {
+    padding: .5rem 1rem;
+}
+
+.alinhamento {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px 40px;
+    margin: 1rem;
+    height: 80px;
+    align-items: center;
+}
+
+.card-academico > .alinhamento {
+    padding-top: 3rem;
+}
+
+.botao-card {
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    font-family: var(--fonte-principal);
+    font-size: .7rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    height: fit-content;
+}
+
+/* Card Minimizado */
+
+/* Espaçamento do fundo dos Cards */
+.card-academico {
+    width: 262px;
+    height: 146px;
+    margin: 0 auto .5rem;
+}
+
+
+/* Fundo dos Cards personalizados e seus alinhamentos */
+.curso-em-video {
+    background: url(../imagens/card-academico/bg-card-curso-em-video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.alura {
+    background: url(../imagens/card-academico/bg-card-alura.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.alura-lingua {
+    background: url(../imagens/card-academico/bg-card-aluralingua.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.uninter {
+    background: url(../imagens/card-academico/bg-card-uninter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cisco {
+    background: url(../imagens/card-academico/bg-card-cisco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ### Card Expandido ### */
+
+.botao-voltar {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+/* Espaçamento do fundo do Card Expandido */
+#pop-up-curso-em-video,
+#pop-up-alura-lingua,
+#pop-up-alura,
+#pop-up-uninter,
+#pop-up-cisco {
+    width: 262px;
+    height: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top: 11%;
+    left: 9%;
+    background-color: var(--cor-principal);
+    z-index: 99;
+    display: none;
+}
+
+/* Fundo do site, que fica fora dos limites do Card Expandido quando ele for acionado */
+.fundo-pop-up {
+    opacity: 0.9;
+    background-color: var(--cor-escura);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* Lista do Card expandido */
+.lista {
+    width: 246px;
+    background-color: var(--cor-escura);
+    color: var(--cor-tercearia);
+    padding: .5em;
+    margin: 1rem auto 0;
+}
+
+/* Mobile M  */
+@media (min-width: 375px) {
+    .card-academico {
+        width: 308px;
+        height: 170px;
+    }
+
+    .card-academico>.titulo-card {
+        padding-top: 5rem;
+    }
+
+    .alinhamento>.paragrafo-card, .card-academico>.paragrafo-card {
+        font-size: .94rem;
+    }
+
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        width: 308px;
+    }
+
+    .lista {
+        width: 292px;
+    }
+    .titulo-card {
+        font-size: 1.5rem;
+    }
+    .paragrafo-card {
+        font-size: .7rem;
+    }
+    .alinhamento {
+        grid-template-columns: 75% 25%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 4rem;
+    }
+}
+
+@media (min-width: 425px) {
+    .card-academico {
+        width: 348px;
+        height: 190px;
+    }
+
+    .card-academico>.titulo-card {
+        padding-top: 5rem;
+        font-size: 2.3rem;
+    }
+    .card-academico>.alinhamento>.botao-card {
+        padding: .5rem;
+        width: 3rem;
+        font-size: 1rem;
+    }
+
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        width: 348px;
+    }
+
+    .lista {
+        width: 332px;
+    }
+    .alinhamento {
+        grid-template-columns: 50% 50%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 5rem;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 5rem;
+    }
+    
+    .alinhamento {
+        grid-template-columns: 78% 22%;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .card-academico>.titulo-card {
+        padding: 2rem 0 0 1rem;
+    }
+    .alinhamento>.paragrafo-card {
+        margin-left: .2rem;
+    }
+    .card-academico {
+        width: 308px;
+        height: 170px;
+    }
+
+
+    .lista {
+        width: 292px;
+        font-size: .5rem;
+    }
+
+    .apresentacao-academico {
+        margin: 0 auto;
+    }
+
+
+    .card-academico>.titulo {
+        padding-top: 4.6rem;
+        font-size: 2rem;
+    }
+
+    .alinhamento>.paragrafo {
+        font-size: 1.01rem;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 3rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .alinhamento {
+        grid-template-columns: 70% 30%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .grid {
+        grid-template-columns: 33% 33% 33%;
+    }
+    
+}
+
+
+
+
+
+
+

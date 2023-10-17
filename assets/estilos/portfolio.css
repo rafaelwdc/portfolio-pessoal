@@ -1,0 +1,198 @@
+.container {
+    margin-top: 86px;
+    background-color: var(--cor-escura);
+    text-align: center;
+}
+
+.secao {
+    background-color: var(--cor-principal);
+    width: 82vw;
+    min-height: 56.5vh;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.titulo {
+    font-size: var(--titulo-mobile);
+}
+
+.paragrafo {
+    font-size: var(--paragrafo-mobile);
+}
+
+.titulo-card {
+    color: var(--cor-principal);
+    font-size: var(--titulo-card-mobile);
+}
+
+.paragrafo-card {
+    color: var(--cor-clara);
+    font-size: var(--paragrafo-card-mobile);
+}
+.esquerda {
+    text-align: start;
+}
+
+/* ------------### Card Portfólio ###------------ */
+
+/* Fundo do card */
+.card-portfolio {
+    width: 262px;
+    height: 190px;
+    margin: 1rem auto;
+    border-radius: 1em;
+    border: 1px solid #777;
+}
+.alinhamento {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px 40px;
+    margin: 1rem;
+    height: 80px;
+    align-items: center;
+}
+
+/* Parte Transparente para que seja possivel ver a imagem de fundo */
+.transparente {
+    width: 262px;
+    height: 90px;
+}
+
+/* Parte do Card onde vai as informações como título, breve texto e o botão para visitar a página */
+.card-apresentacao {
+    width: 262px;
+    height: 100px;
+    border-radius: 1em 5em 1em 1em;
+    color: var(--cor-principal);
+    background-color: #000000cc;
+    border: 1px solid #777;
+}
+
+.botao-card {
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    font-family: var(--fonte-principal);
+    font-size: .7rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    height: fit-content;
+}
+
+/* Fundo dos Cards com as imagens e seu alinhamento */
+.sebo-digital {
+    background: url(../imagens/card-portfolio/sebo-digital.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sorteador {
+    background: url(../imagens/card-portfolio/sorteador.png);
+    background-size: cover;
+}
+
+.orkut {
+    background: url(../imagens/card-portfolio/orkut.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (min-width: 375px) {
+    .transparente {
+        height: 100px;
+    }
+    
+    .card-portfolio  {
+        width: 308px;
+        height: 210px;
+    }
+    .card-apresentacao {
+        width: 308px;
+        height: 110px;
+    }
+    .card-apresentacao > .titulo {
+        font-size: 1.5rem;
+    }
+    .alinhamento > .paragrafo {
+        font-size: 1rem;
+    }
+    .alinhamento {
+        grid-template-columns: 75% 25%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 4rem;
+    }
+}
+
+@media (min-width: 425px) {
+    .card-portfolio {
+        width: 348px;
+        height: 190px;
+    }
+    .transparente {
+        height: 80px;
+    }
+    .card-apresentacao {
+        width: 348px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-portfolio {
+        width: 300px;
+        height: 220px; 
+    }
+
+    .transparente {
+        width: 300px;
+        height: 105px;
+    }
+
+    .card-apresentacao {
+        width: 300px;
+        height: 115px;
+    }
+}
+
+
+
+
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 425px) {
+    .alinhamento {
+        grid-template-columns: 50% 50%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 5rem;
+    }
+
+}
+
+@media (min-width: 425px) {
+    .card-academico > .alinhamento {
+        padding-top: 5rem;
+    }
+    
+    .alinhamento {
+        grid-template-columns: 78% 22%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-academico > .alinhamento {
+        padding-top: 3rem;
+    }
+    
+}
+@media (min-width: 1024px) {
+    .alinhamento {
+        grid-template-columns: 70% 30%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 4rem;
+    }
+}
