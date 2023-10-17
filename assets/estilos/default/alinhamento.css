@@ -1,8 +1,0 @@
-/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
-
-.alinhamento {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 1rem;
-}
