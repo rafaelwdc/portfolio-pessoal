@@ -137,12 +137,6 @@
     .lista {
         width: 292px;
     }
-    .titulo-card {
-        font-size: 1.5rem;
-    }
-    .paragrafo-card {
-        font-size: .7rem;
-    }
     .alinhamento {
         grid-template-columns: 75% 25%;
     }
@@ -198,27 +192,51 @@
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .card-academico>.titulo-card {
-        padding: 2rem 0 0 1rem;
-    }
     .alinhamento>.paragrafo-card {
         margin-left: .2rem;
     }
+    .pop-up>.card-academico>.titulo-card {
+        font-size: 4rem;
+        padding-top: 8rem;
+    }
+    .pop-up>.card-academico>.paragrafo-card {
+        font-size: 2rem;
+    }
+    .card-academico > .titulo-card {
+        font-size: 4rem;
+    }
     .card-academico {
-        width: 308px;
-        height: 170px;
+        width: 290px;
+        height: 146px;
+    }
+    
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        width: 630px;
     }
 
-
+    .pop-up>.curso-em-video {
+        width: 630px;
+        height: 280px;
+    }
+    .pop-up-alura .card-academico{
+        width: 630px;
+        height: 280px;
+    }
+    
     .lista {
-        width: 292px;
-        font-size: .5rem;
+        margin-top: 2.6rem;
+        width: 613px;
     }
-
+    .lista>.paragrafo {
+        font-size: 4rem;
+    }
     .apresentacao-academico {
         margin: 0 auto;
     }
-
 
     .card-academico>.titulo {
         padding-top: 4.6rem;
@@ -238,8 +256,15 @@
     .alinhamento {
         grid-template-columns: 70% 30%;
     }
+    .card-academico {
+        width: 308px;
+        height: 170px;
+    }
     .card-academico > .alinhamento {
         padding-top: 4rem;
+    }
+    .alinhamento > .botao-card {
+        margin-left: 1.4rem;
     }
 }
 
