@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <!-- Resetando todos os estilos default dos navegadores -->
-    <link rel="stylesheet" href="../assets/estilos/default/reset.css">
+    <link rel="stylesheet" href="../assets/estilos/reset.css">
     <link rel="stylesheet" href="../assets/estilos/estilos.css">
+    <link rel="stylesheet" href="../assets/estilos/portfolio.css">
     <!-- Adicionando FavIcon Personalizado -->
     <link rel="shortcut icon" href="../assets/imagens/icones/favicon.ico" type="image/x-icon">
 </head>
@@ -25,19 +26,19 @@
             </button>
             <ul class="menu" role="menu">
                 <li>
-                    <a href="../index.html">Home</a>
+                    <a class="paragrafo" href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="sobre.html">Sobre mim</a>
+                    <a class="paragrafo" href="sobre.html">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="academico.html">Onde estudei</a>
+                    <a class="paragrafo" href="academico.html">Onde estudei</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">O que eu fiz</a>
+                    <a class="paragrafo" href="portfolio.html">O que eu fiz</a>
                 </li>
                 <li>
-                    <a href="contato.html">Fale comigo!</a>
+                    <a class="paragrafo" href="contato.html">Fale comigo!</a>
                 </li>
             </ul>
         </nav>
@@ -45,42 +46,48 @@
 
     <!-- Conteúdo principal da página -->
     <main class="container">
-        <section class="principal secao" id="principal">
+        <section class="secao" id="portfolio">
             <!-- Título da Página -->
             <h1 class="titulo esquerda">O que eu fiz</h1>
 
-            <div class="card-portfolio sebo-digital">
-                <div class="transparente"></div>
-                <div class="card-apresentacao">
-                    <h1 class="titulo-card esquerda">Sebo Digital</h1>
-                    <div class="alinhamento">
-                        <p class="paragrafo-card esquerda">Site Clone do AluraBooks, para testar os meus conhecimentos com HTML e CSS principalmente com sites recursivos</p>
-                        <a class="botao-card" href="https://rafaelwdc.github.io/alurabook/" target="_blank" rel="noopener noreferrer">Visitar Página</a>
+            <div class="grid">
+                <div class="card-portfolio sebo-digital">
+                    <div class="transparente"></div>
+                    <div class="card-apresentacao">
+                        <div class="alinhamento">
+                            <h1 class="titulo-card esquerda">Sebo Digital</h1>
+                            <p>.</p>
+                            <p class="paragrafo-card esquerda">Site Clone do AluraBooks, para testar os meus conhecimentos com HTML e CSS</p>
+                            <a class="botao-card" href="https://rafaelwdc.github.io/alurabook/" target="_blank" rel="noopener noreferrer">Visitar Página</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-portfolio sorteador">
-                <div class="transparente"></div>
-                <div class="card-apresentacao">
-                    <h1 class="titulo-card esquerda">Sorteador Amigo Secreto</h1>
-                    <div class="alinhamento">
-                        <p class="paragrafo-card esquerda">Site para sorteio de amigo secreto, feito para cada um comprar o presente e só descobrir pra quem é no dia que for entregar</p>
-                        <a class="botao-card" href="https://sorteador-amigo-secreto-omega.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar Página</a>
+                <div class="card-portfolio sorteador">
+                    <div class="transparente"></div>
+                    <div class="card-apresentacao">
+                        <div class="alinhamento">
+                            <h1 class="titulo-card esquerda">Sorteador Amigo Secreto</h1>
+                            <p>.</p>
+                            <p class="paragrafo-card esquerda">Site para sorteio de amigo secreto, feito para comprar o presente e só descobrir o felizardo no dia dá entrega</p>
+                            <a class="botao-card" href="https://sorteador-amigo-secreto-omega.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar Página</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-portfolio orkut">
-                <div class="transparente"></div>
-                <div class="card-apresentacao">
-                    <h1 class="titulo-card esquerda">Alurakut</h1>
-                    <div class="alinhamento">
-                        <p class="paragrafo-card esquerda">Site Clone do Orkut, feito durante a Imersão React na plataforma Alura para relembrar esse site tão nostálgico</p>
-                        <a class="botao-card" href="https://orkut-simulator.vercel.app/login" target="_blank" rel="noopener noreferrer">Visitar Página</a>
+                <div class="card-portfolio orkut">
+                    <div class="transparente"></div>
+                    <div class="card-apresentacao">
+                        <div class="alinhamento">
+                            <h1 class="titulo-card esquerda">Alurakut</h1>
+                            <p>.</p>
+                            <p class="paragrafo-card esquerda">Site Clone do Orkut, feito durante a Imersão React na plataforma Alura para relembrar esse site tão nostálgico</p>
+                            <a class="botao-card" href="https://orkut-simulator.vercel.app/login" target="_blank" rel="noopener noreferrer">Visitar Página</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </section>
+
     </main>
 
     <!-- Rodapé -->

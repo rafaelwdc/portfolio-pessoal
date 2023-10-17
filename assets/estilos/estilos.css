@@ -4,62 +4,244 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,400;0,700;0,1000;1,100;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
-/* Importando estilos padrões de todas as páginas */
 
-/* Formatação de textos padrão de todas as páginas */
-@import url(default/textos.css);
-/* Formatação do cabeçalho de todas as páginas */
-@import url(default/cabecalho.css);
-/* Formatação do menu hamburguer de todas as páginas */
-@import url(default/menu-hamburguer.css);
-/* Formatação dos cards de todas as páginas */
-@import url(default/card.css);
 /* Formatação do alinhamento dos botões e textos nos cards de todas as páginas */
 @import url(default/alinhamento.css);
 /* Formatação dos botões de todas as páginas */
 @import url(default/botao.css);
 /* Formatação do rodapé de todas as páginas */
-@import url(default/rodape.css);
 
-/* Importando estilos das páginas */
-@import url(paginas/index.css);
-/* Toda formatação da página index */
-@import url(paginas/sobre.css);
-/* Toda formatação da página sobre */
-@import url(paginas/academico.css);
-/* Toda formatação da página acadêmico */
-@import url(paginas/portfolio.css);
-/* Toda formatação da página portfolio */
-@import url(paginas/contato.css);
-/* Toda formatação da página contato */
+
 
 /* Declarando as Variáveis */
 
 :root {
-
     /* Cores */
     --cor-principal: #FAD532;
-    --cor-secundaria: #333333;
-    --cor-tercearia: #F8F8F8;
+    --cor-secundaria: #0796FA;
+    --cor-escura: #333333;
+    --cor-clara: #F8F8F8;
 
     /* Fontes */
     --fonte-principal: 'Sofia Sans Extra Condensed', sans-serif;
     --fonte-alternativa: 'Foldit', cursive;
 
     /* Tamanhos */
-    --tamanho-mobile: 1rem;
-    --tamanho-tablet: 1.5rem;
-    --tamanho-desktop: 2rem;
+    /* --- Mobile --- */
+    --titulo-mobile: 1.5rem;
+    --paragrafo-mobile: 1.25rem;
+    --titulo-card-mobile: 1.25rem;
+    --paragrafo-card-mobile: .7rem;
+    /* --- Tablet --- */
+    --titulo-tablet: 2rem;
+    --paragrafo-tablet: 1.5rem;
+    --titulo-card-tablet: 1.5rem;
+    --paragrafo-card-tablet: 2rem;
+    /* --- Desktop --- */
+    --titulo-desktop: 1.5rem;
+    --paragrafo-desktop: 1.25rem;
+    --titulo-card-desktop: 1.5rem;
+    --paragrafo-card-desktop: 2rem;
+
 }
 
-.secao {
-    margin-top: 86px;
-    height: fit-content;
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
+
+
+
+/* Formatação dos textos padrões de todas as páginas */
+
+/* Adicionando a fonte */
+.titulo, .titulo-card, .paragrafo, .paragrafo-card {
+    font-family: var(--fonte-principal);
 }
 
-@media (min-width: 425px) {
-    .secao {
+/* Títulos */
+
+
+/* Parágrafos */
+
+/* Adicionando um peso maior a fonte */
+
+
+/* Adicionando um peso menor a fonte */
+
+
+/* Posiciona textos à esquerda */
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
+    
+    .paragrafo {
+        font-size: 1.75rem;
+    }
+    
+}
+
+/* ------ Formatação do cabeçalho de todas as páginas ------ */
+
+.cabecalho {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    z-index: 98;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FAD532;
+    font-family: var(--fonte-principal);
+}
+
+.logo {
+    position: relative;
+    width: 130px;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem
+}
+.menu a {
+    display: block;
+    padding: .5rem;
+}
+
+
+/* ------ Formatação do menu hamburguer ------ */
+
+@media (max-width: 768px) {
+    /* Posiciona o menu hamburguer do lado esquerdo e a logo do lado direito para as telas mobile e Tablet */
+    .cabecalho {
+        flex-direction: row-reverse;
+    }
+    /* Cria a estilização do menu navegação */
+    .menu {
+        display: block;
+        position: absolute;
+        width: 8rem;
+        top: 70px;
+        left: 0;
+        background-color: var(--cor-escura);
+        height: 0;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    /* Tamanho e Animação do menu navegação do menu hamburguer */
+    #nav.active .menu {
+        height: 275px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    
+    /* Itens do menu navegação e animação de quando o mouse estiver sobre o ítem */
+    .menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        color: var(--cor-principal);
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    .menu a:hover {
+        background-color: var(--cor-principal);
+        color: var(--cor-escura);
+    }
+    
+    /* Estiliza o menu hamburguer */  
+    .menu-hamburguer {
         display: flex;
-        flex-direction: column;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    /* Cria uma barra do menu Hamburguer */
+    .hamburguer {
+        display: block;
+        width: 45px;
+        border-top: 9px solid var(--cor-escura);
+    }
+    
+    /* Cria outras barras do hamburguer usando pseudoelementos */
+    .hamburguer::after, .hamburguer::before {
+        content: '';
+        display: block;
+        width: 45px;
+        height: 9px;
+        background-color: var(--cor-escura);
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    
+    /* Cria a animação do menu Hamburguer, quando ele for clicado, se transformará em um X */
+    #nav.active .hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -14px;
+    }
+}
+
+/* ------ Formatação do rodapé de todas as páginas ------ */
+
+.rodape {
+    width: 100vw;
+    height: 120px;
+    background: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.link-redes-sociais {
+    width: 42px;
+    margin: 1rem;
+}
+
+.rodape > .paragrafo {
+    font-size: 1rem;
+    margin: .1rem;
+}
+
+@media (min-width: 768px) {
+    
+    .rodape {
+        height: 160px;
+    }
+    .lista-redes-sociais {
+        margin-bottom: .5rem;
+
+    }
+    .link-redes-sociais {
+        width: 55px;
+    }
+
+    .rodape > .paragrafo {
+        font-size: 1.5rem;
     }
 }
