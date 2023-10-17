@@ -1,20 +1,10 @@
-/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
+/* Nesse arquivo contêm todos os elementos que se repetem em todas as páginas */
 
-/* Importando as Fontes */
+/* --------- Importando as Fontes --------- */
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,400;0,700;0,1000;1,100;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
 
-
-/* Formatação do alinhamento dos botões e textos nos cards de todas as páginas */
-@import url(default/alinhamento.css);
-/* Formatação dos botões de todas as páginas */
-@import url(default/botao.css);
-/* Formatação do rodapé de todas as páginas */
-
-
-
-/* Declarando as Variáveis */
-
+/* --------------- Variáveis --------------- */
 :root {
     /* Cores */
     --cor-principal: #FAD532;
@@ -26,12 +16,11 @@
     --fonte-principal: 'Sofia Sans Extra Condensed', sans-serif;
     --fonte-alternativa: 'Foldit', cursive;
 
-    /* Tamanhos */
     /* --- Mobile --- */
     --titulo-mobile: 1.5rem;
     --paragrafo-mobile: 1.25rem;
     --titulo-card-mobile: 1.25rem;
-    --paragrafo-card-mobile: .7rem;
+    --paragrafo-card-mobile: .9rem;
     /* --- Tablet --- */
     --titulo-tablet: 2rem;
     --paragrafo-tablet: 1.5rem;
@@ -42,49 +31,63 @@
     --paragrafo-desktop: 1.25rem;
     --titulo-card-desktop: 1.5rem;
     --paragrafo-card-desktop: 2rem;
-
 }
 
-/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas menores telas organizando o conteúdo se adapta a telas maiores através das Midia Query */
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas telas menores telas e ajustam e enquadram melhor o conteúdo às telas maiores através das Midia Query */
 
-
-
-/* Formatação dos textos padrões de todas as páginas */
-
-/* Adicionando a fonte */
-.titulo, .titulo-card, .paragrafo, .paragrafo-card {
+/*----------------- Textos ----------------- */
+/* Textos dos conteúdos */
+.titulo {
     font-family: var(--fonte-principal);
+    font-size: var(--titulo-mobile);
+    text-align: center;
+}
+.paragrafo {
+    font-size: var(--paragrafo-mobile);
+    font-family: var(--fonte-principal);
+    text-align: center;
 }
 
-/* Títulos */
-
-
-/* Parágrafos */
-
-/* Adicionando um peso maior a fonte */
-
-
-/* Adicionando um peso menor a fonte */
-
-
-/* Posiciona textos à esquerda */
-
-
-
-/* Tablet */
-@media (min-width: 768px) {
-    .titulo {
-        font-size: 2.5rem;
-    }
-    
-    .paragrafo {
-        font-size: 1.75rem;
-    }
-    
+/* Textos dos cards */
+.titulo-card {
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: var(--titulo-card-mobile);
+    text-align: center;
+}
+.paragrafo-card {
+    font-family: var(--fonte-principal);
+    color: var(--cor-clara);
+    font-size: var(--paragrafo-card-mobile);
+    text-align: center;
 }
 
-/* ------ Formatação do cabeçalho de todas as páginas ------ */
+/* Alinhamento */
+.esquerda {
+    text-align: start;
+}
 
+/* Peso */
+.peso-forte {
+    font-weight: bolder;
+}
+.peso-fraco {
+    font-weight: 300;
+}
+
+/* Links e sua animação quando o mouse estiver sobre */
+.link {
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    text-shadow: 4px 4px 4px 4px var(--cor-escura);
+}
+.link:hover {
+    color: var(--cor-clara);
+    text-decoration: underline;
+}
+
+/*--------------- Cabeçalho ---------------- */
+/* Estilização do cabeçalho Mobile */
 .cabecalho {
     box-sizing: border-box;
     position: fixed;
@@ -95,115 +98,170 @@
     display: flex;
     z-index: 98;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     background: #FAD532;
     font-family: var(--fonte-principal);
 }
-
+/* Logo do Site */
 .logo {
     position: relative;
     width: 130px;
 }
 
-.menu-hamburguer {
-    display: none;
-}
+/*---------------- Navegação --------------- */
 
+/* Lista com os links interno do site */
 .menu {
     display: flex;
-    list-style: none;
-    gap: .5rem
+    flex-direction: column;
+    position: absolute;
+    width: 215px;
+    top: 70px;
+    left: 0;
+    background-color: var(--cor-escura);
+    height: 0;
+    transition: 1s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-x: hidden;
 }
-.menu a {
+/* Estilização dos itens da lista do menu navegação */
+.menu> .paragrafo {
+    padding: 1rem;
+    color: var(--cor-principal);
+    border-bottom: 2px solid rgba(0, 0, 0, .05);
+}
+/* Menu navegação  aparecerá quando o menu hamburguer for acionado*/
+#nav.active .menu {
+    height: 268px;
+    visibility: visible;
+    overflow-x: auto;
+}
+
+/*--------------- Hamburguer --------------- */
+
+/* Estiliza o menu hamburguer */  
+.menu-hamburguer {
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Cria uma barra do menu Hamburguer */
+.hamburguer {
     display: block;
-    padding: .5rem;
+    width: 45px;
+    border-top: 9px solid var(--cor-escura);
 }
 
+/* Cria outras barras do hamburguer usando pseudoelementos */
+.hamburguer::after, .hamburguer::before {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 9px;
+    background-color: var(--cor-escura);
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+/* Cria a animação do menu Hamburguer, quando ele for clicado, se transformará em um X */
+#nav.active .hamburguer {
+    border-top-color: transparent;
+}
+#nav.active .hamburguer::before {
+    transform: rotate(135deg);
+}
+#nav.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -14px;
+}
 
-/* ------ Formatação do menu hamburguer ------ */
+/*-------------- Alinhamento --------------- */
+/* Alinhamento dos cards, o título fica em cima, e o parágrafo e o botão na linha de baixo lado a lado */
+.alinhamento {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px 40px;
+    margin: 1rem;
+    height: 80px;
+    align-items: center;
+}
 
-@media (max-width: 768px) {
-    /* Posiciona o menu hamburguer do lado esquerdo e a logo do lado direito para as telas mobile e Tablet */
-    .cabecalho {
-        flex-direction: row-reverse;
+/* Estilização do fundo da página */
+.container {
+    margin-top: 86px;
+    background-color: var(--cor-escura);
+}
+
+/* Estilização do fundo do conteúdo principal */
+.secao {
+    background-color: var(--cor-principal);
+    width: 80vw;
+    min-height: 56.5vh;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+@media (min-width: 374px) {
+    .secao {
+        min-width: 308;
     }
+}
+@media (min-width: 768px) {
+   
     /* Cria a estilização do menu navegação */
-    .menu {
-        display: block;
-        position: absolute;
-        width: 8rem;
-        top: 70px;
-        left: 0;
-        background-color: var(--cor-escura);
-        height: 0;
-        transition: .6s;
-        z-index: 1000;
-        visibility: hidden;
-        overflow-y: hidden;
+    .cabecalho {
+        flex-direction: row;
     }
-    
-    /* Tamanho e Animação do menu navegação do menu hamburguer */
-    #nav.active .menu {
-        height: 275px;
-        visibility: visible;
-        overflow-y: auto;
-    }
-    
-    /* Itens do menu navegação e animação de quando o mouse estiver sobre o ítem */
-    .menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        color: var(--cor-principal);
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
-    }
-    .menu a:hover {
-        background-color: var(--cor-principal);
-        color: var(--cor-escura);
-    }
-    
-    /* Estiliza o menu hamburguer */  
-    .menu-hamburguer {
-        display: flex;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-    
-    /* Cria uma barra do menu Hamburguer */
-    .hamburguer {
-        display: block;
-        width: 45px;
-        border-top: 9px solid var(--cor-escura);
-    }
-    
-    /* Cria outras barras do hamburguer usando pseudoelementos */
-    .hamburguer::after, .hamburguer::before {
-        content: '';
-        display: block;
-        width: 45px;
-        height: 9px;
-        background-color: var(--cor-escura);
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-    
-    /* Cria a animação do menu Hamburguer, quando ele for clicado, se transformará em um X */
-    #nav.active .hamburguer {
-        border-top-color: transparent;
-    }
-    #nav.active .hamburguer::before {
-        transform: rotate(135deg);
-    }
-    #nav.active .hamburguer::after {
-        transform: rotate(-135deg);
-        top: -14px;
-    }
-}
 
-/* ------ Formatação do rodapé de todas as páginas ------ */
+    .menu-hamburguer {
+        display: none;
+    }
+    .hamburguer {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        position: relative;
+        width: fit-content;
+        top: 0;
+        left: 0;
+        background-color: var(--cor-principal);
+        height: 1.5rem;
+        visibility: visible;
+        transition: none;
+        overflow-y: hidden;
+        align-items: center;
+    }
+    
+    .menu > .paragrafo {
+        
+        color: var(--cor-escura);
+        width: fit-content;
+        margin: .2rem;
+        padding: .2rem;
+        border: none;
+    }
+
+    .menu > .paragrafo {
+        font-size: 1.35rem;
+        color: var(--cor-escura);
+        background-color: var(--cor-principal);
+    }
+    .menu >li> .paragrafo:hover {
+        color: var(--cor-clara);
+        background-color: var(--cor-escura);
+
+    }
+    
+}
 
 .rodape {
     width: 100vw;
