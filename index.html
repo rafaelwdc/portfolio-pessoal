@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <!-- Resetando todos os estilos default dos navegadores -->
-    <link rel="stylesheet" href="assets/estilos/default/reset.css">
+    <link rel="stylesheet" href="assets/estilos/reset.css">
     <link rel="stylesheet" href="assets/estilos/estilos.css">
+    <link rel="stylesheet" href="assets/estilos/index.css">
     <!-- Adicionando FavIcon Personalizado -->
     <link rel="shortcut icon" href="assets/imagens/icones/favicon.ico" type="image/x-icon">
 </head>
@@ -27,19 +28,19 @@
             <ul class="menu" role="menu">
                 <!-- Items do Menu de Navegação -->
                 <li>
-                    <a href="index.html">Home</a>
+                    <a class="paragrafo" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="paginas/sobre.html">Sobre mim</a>
+                    <a class="paragrafo" href="paginas/sobre.html">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="paginas/academico.html">Onde estudei</a>
+                    <a class="paragrafo" href="paginas/academico.html">Onde estudei</a>
                 </li>
                 <li>
-                    <a href="paginas/portfolio.html">O que eu fiz</a>
+                    <a class="paragrafo" href="paginas/portfolio.html">O que eu fiz</a>
                 </li>
                 <li>
-                    <a href="paginas/contato.html">Fale comigo!</a>
+                    <a class="paragrafo" href="paginas/contato.html">Fale comigo!</a>
                 </li>
             </ul>
         </nav>
@@ -47,31 +48,30 @@
 
     <!-- Conteúdo principal da página -->
     <main class="container">
-        <!-- Principal -->
-        <section class="principal secao" id="principal">
+        <section class="secao">
             <!-- Título da Página -->
             <h1 class="titulo esquerda">Sejam bem-vindos ao meu Portfólio Pessoal!</h1><br>
             <!-- A Seção apresentará um breve texto resumindo as minhas qualidades e me apresentando ao usuário do site -->
-
             <p class="paragrafo">Tenho como cartão de visitas <strong class="peso-forte"> 3 pontos sobre mim</strong> que me representam no <strong class="peso-forte">profissional</strong>, são eles:</p><br>
-            <div class="pilar">
-                <div class="pilares">
-                    <img class="icones-pilares" src="assets/imagens/pilares/agilidade.svg" alt="Imagem de um relógio para representar a agilidade"><p class="titulo pilares"><strong class="peso-forte">Ágil</strong></p>
-                </div>
-                <div class="pilares">
-                    <img class="icones-pilares" src="assets/imagens/pilares/eficiencia.svg" alt="Imagem de um uma seta apontando para cima para representar a eficiência"><p class="titulo pilares"><strong class="peso-forte">Eficiênte</strong></p>
-                </div>
-                <div class="pilares">
-                    <img class="icones-pilares" src="assets/imagens/pilares/criativo.svg" alt="Imagem de uma lâmpada para representar a criatividade"><p class="titulo pilares"><strong class="peso-forte">Criativo</strong></p>
-                </div>
-            </div>
+            <ul class="pilar">
+                <li class="pilares">
+                    <img class="icones-pilares" src="assets/imagens/pilares/agilidade.svg" alt="Imagem de um relógio para representar a agilidade"><p class="paragrafo pilares"><strong class="peso-forte">Ágil</strong></p>
+                </li>
+                <li class="pilares">
+                    <img class="icones-pilares" src="assets/imagens/pilares/eficiencia.svg" alt="Imagem de um uma seta apontando para cima para representar a eficiência"><p class="paragrafo pilares"><strong class="peso-forte">Eficiênte</strong></p>
+                </li>
+                <li class="pilares">
+                    <img class="icones-pilares" src="assets/imagens/pilares/criativo.svg" alt="Imagem de uma lâmpada para representar a criatividade"><p class="paragrafo pilares"><strong class="peso-forte">Criativo</strong></p>
+                </li>
+            </ul>
+            <br>
+            <p class="paragrafo">Aqui você poderá conhecer um pouco <a class="link" href="paginas/sobre.html">sobre mim</a>, ou o que sobre o que eu fiz tanto no <a class="link" href="paginas/academico.html">âmbito acadêmico</a> quando <a class="link" href="paginas/portfolio.html">projetos</a> que fiz ao longo da minha jornada, e se quiser pode me mandar uma <a class="link" href="paginas/contato.html">mensagem</a> de qual plataforma desejar.</p>
             <br>
             <p class="paragrafo">Cada um deles irá atender as demandas que sua empresa necessita, e tenho certeza que tenho uma solução para o seu negócio!</p>
             <br>
             <p class="paragrafo peso-fraco">Comece agora mesmo a explorar o meu Portfólio Pessoal!</p>
         </section>
     </main>
-
     <!-- Rodapé -->
     <footer class="rodape">
         <ul class="lista-redes-sociais">
@@ -82,8 +82,7 @@
         <p class="paragrafo">Rafael Matheus de Freitas</p>
         <p class="paragrafo">&copy; 2023 | Curitiba PR</p>
     </footer>
-
-    <!-- Atribuindo o código JavaScript -->
+    <!-- Atribuindo o arquivo com o código JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
 
