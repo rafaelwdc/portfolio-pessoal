@@ -36,6 +36,7 @@
 /* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas telas menores telas e ajustam e enquadram melhor o conteúdo às telas maiores através das Midia Query */
 
 /*----------------- Textos ----------------- */
+
 /* Textos dos conteúdos */
 .titulo {
     font-family: var(--fonte-principal);
@@ -87,6 +88,7 @@
 }
 
 /*--------------- Cabeçalho ---------------- */
+
 /* Estilização do cabeçalho Mobile */
 .cabecalho {
     box-sizing: border-box;
@@ -103,7 +105,7 @@
     background: #FAD532;
     font-family: var(--fonte-principal);
 }
-/* Logo do Site */
+/* Logo do Projeto */
 .logo {
     position: relative;
     width: 130px;
@@ -180,16 +182,7 @@
     top: -14px;
 }
 
-/*-------------- Alinhamento --------------- */
-/* Alinhamento dos cards, o título fica em cima, e o parágrafo e o botão na linha de baixo lado a lado */
-.alinhamento {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 30px 40px;
-    margin: 1rem;
-    height: 80px;
-    align-items: center;
-}
+/*----------------- Fundos ----------------- */
 
 /* Estilização do fundo da página */
 .container {
@@ -206,6 +199,36 @@
     padding: 1rem;
 }
 
+/*-------------- Alinhamento --------------- */
+
+/* Alinhamento dos cards, o título fica em cima, e o parágrafo e o botão na linha de baixo lado a lado */
+.alinhamento {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30px 40px;
+    margin: 1rem;
+    height: 80px;
+    align-items: center;
+}
+
+/*-------------- Botões Card --------------- */
+
+/* Cria o botão do card */
+.botao-card {
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    font-family: var(--fonte-principal);
+    font-size: .7rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    height: fit-content;
+
+}
+ 
+/*---------------- Rodapé ------------------ */
+
+/* Estilização do rodapé */
 .rodape {
     width: 100vw;
     height: 120px;
@@ -218,20 +241,21 @@
     position: relative;
     bottom: 0;
 }
-
+/* Tamanho dos ícones das redes sociais */
 .link-redes-sociais {
     width: 42px;
     margin: 1rem;
 }
 
+/* Tamanho das fontes do rodapé */
 .rodape > .paragrafo {
     font-size: 1rem;
     margin: .1rem;
 }
 
-
+/*---------------- Tablet ------------------ */
 @media (min-width: 768px) {
-   
+    /* Textos */
     .titulo {
         font-size: var(--titulo-tablet);
     }
@@ -239,7 +263,6 @@
         font-size: var(--paragrafo-tablet);
     }
     
-    /* Textos dos cards */
     .titulo-card {
         font-size: var(--titulo-card-tablet);
     }
@@ -247,15 +270,15 @@
         font-size: var(--paragrafo-card-tablet);
     }
 
-    /* Cria a estilização do menu navegação */
+    /* Cabecalho */
     .cabecalho {
         flex-direction: row;
     }
-
+    /* Hamburguer */
     .hamburguer {
         display: none;
     }
-
+    /* Navegação */
     .menu {
         display: flex;
         flex-direction: row;
@@ -271,16 +294,13 @@
         overflow-y: hidden;
         align-items: center;
     }
-    
     .menu > .paragrafo {
-        
         color: var(--cor-escura);
         width: fit-content;
         margin: .2rem;
         padding: .2rem;
         border: none;
     }
-
     .menu > .paragrafo {
         font-size: 1.35rem;
         color: var(--cor-escura);
@@ -289,8 +309,8 @@
     .menu >li> .paragrafo:hover {
         color: var(--cor-clara);
         background-color: var(--cor-escura);
-
     }
+    /* Rodapé */
     .rodape {
         height: 160px;
     }
@@ -305,8 +325,15 @@
         font-size: 1.5rem;
     }
 }
+@media (min-width: 1024px) {
+    .secao {
+        width: 819px;
+    }
+}
 
+/*---------------- Laptop ------------------ */
 @media (min-width: 1440px) {
+    /* Textos */
     .titulo {
         font-size: var(--titulo-desktop);
     }
@@ -314,12 +341,15 @@
         font-size: var(--paragrafo-desktop);
     }
     
-    /* Textos dos cards */
     .titulo-card {
         font-size: var(--titulo-card-desktop);
     }
     .paragrafo-card {
         font-size: var(--paragrafo-card-desktop);
+    }
+    /* Fundos */
+    .secao {
+        width: 1152px;
     }
 
 }
