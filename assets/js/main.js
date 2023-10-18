@@ -94,4 +94,3 @@ function fechar_cisco(){
     fechar_fundo();
     document.querySelector('#pop-up-cisco').style.display = 'none';
 }
-
