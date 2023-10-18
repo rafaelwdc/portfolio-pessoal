@@ -12,7 +12,7 @@
     <!-- Adicionando FavIcon Personalizado -->
     <link rel="shortcut icon" href="assets/imagens/icones/favicon.ico" type="image/x-icon">
 </head>
-
+ <!-- Classe 'container' usada para estilizar o fundo da página -->
 <body class="container">
     <!-- Cabeçalho -->
     <header class="cabecalho">
@@ -23,7 +23,7 @@
             <!-- Menu Hamburguer -->
             <a class="menu-hamburguer" id="botao-menu-hamburguer" aria-label="Abrir Menu" aria-haspopup="true"
                 aria-controls="menu" aria-expanded="false">
-                <span class="hamburguer"></span>
+                <span class="hamburguer"></span> <!-- Esse Span será manipulado via CSS para formar o ícone do Menu Hamburguer-->
             </a>
             <!-- Menu Navegação -->
             <ul class="menu" role="menu">
@@ -37,25 +37,28 @@
         </nav>
     </header>
 
-    <!-- Conteúdo principal da página -->
-    <main class="container">
+        <!-- Classe 'secao' usada para estilizar o fundo do conteúdo principal -->
         <section class="secao">
             <!-- Título da Página -->
             <h1 class="titulo esquerda">Sejam bem-vindos ao meu Portfólio Pessoal!</h1><br>
-            <!-- A Seção apresentará um breve texto resumindo as minhas qualidades e me apresentando ao usuário do site -->
+            <!-- Um breve texto resumindo as minhas qualidades e me apresentando ao usuário do site -->
             <p class="paragrafo">Tenho como cartão de visitas <strong class="peso-forte"> 3 pontos sobre mim</strong>
                 que me representam no <strong class="peso-forte">profissional</strong>, são eles:</p><br>
+            <!-- Lista com as Imagens com ícones que me representam -->
             <ul class="pilar">
+                <!-- Pilar #1 Ágil -->
                 <li class="pilares">
                     <img class="icones-pilares" src="assets/imagens/pilares/agilidade.svg"
-                        alt="Imagem de um relógio para representar a agilidade">
+                    alt="Imagem de um relógio para representar a agilidade">
                     <p class="paragrafo pilares"><strong class="peso-forte">Ágil</strong></p>
                 </li>
+                <!-- Pilar #2 Eficiênte -->
                 <li class="pilares">
                     <img class="icones-pilares" src="assets/imagens/pilares/eficiencia.svg"
-                        alt="Imagem de um uma seta apontando para cima para representar a eficiência">
+                    alt="Imagem de um uma seta apontando para cima para representar a eficiência">
                     <p class="paragrafo pilares"><strong class="peso-forte">Eficiênte</strong></p>
                 </li>
+                <!-- Pilar #3 Criativo -->
                 <li class="pilares">
                     <img class="icones-pilares" src="assets/imagens/pilares/criativo.svg"
                         alt="Imagem de uma lâmpada para representar a criatividade">
@@ -63,6 +66,7 @@
                 </li>
             </ul>
             <br>
+            <!-- Continuação do texto resumindo as minhas qualidades e me apresentando ao usuário do site -->
             <p class="paragrafo">Aqui você poderá conhecer um pouco <a class="link" href="paginas/sobre.html">sobre
                     mim</a>, ou o que sobre o que eu fiz tanto no <a class="link" href="paginas/academico.html">âmbito
                     acadêmico</a> quando <a class="link" href="paginas/portfolio.html">projetos</a> que fiz ao longo da
@@ -74,20 +78,23 @@
             <br>
             <p class="paragrafo peso-fraco">Comece agora mesmo a explorar o meu Portfólio Pessoal!</p>
         </section>
-    </main>
+   
     <!-- Rodapé -->
     <footer class="rodape">
+        <!-- Lista de Redes Sociais -->
         <ul class="lista-redes-sociais">
-            <a href="#" class="link-redes-sociais"><img src="assets/imagens/icones/Github-1.svg"
+            <a href="https://github.com/rafaelwdc" class="link-redes-sociais" target="_blank" rel="noopener noreferrer"><img src="assets/imagens/icones/Github-1.svg"
                     alt="Ícone do Github"></a>
-            <a href="#" class="link-redes-sociais"><img src="assets/imagens/icones/Insta-1.svg"
+            <a href="https://www.instagram.com/rafaelwdc/" class="link-redes-sociais" target="_blank" rel="noopener noreferrer"><img src="assets/imagens/icones/Insta-1.svg"
                     alt="Ícone do Instagram"></a>
-            <a href="#" class="link-redes-sociais"><img src="assets/imagens/icones/Linkedin-1.svg"
+            <a href="https://www.linkedin.com/in/rafaelwdc/" class="link-redes-sociais" target="_blank" rel="noopener noreferrer"><img src="assets/imagens/icones/Linkedin-1.svg"
                     alt="Ícone do Linkedin"></a>
         </ul>
+        <!-- Algumas informações sobre mim pra fechar o rodapé -->
         <p class="paragrafo">Rafael Matheus de Freitas</p>
-        <p class="paragrafo">&copy; 2023 | Curitiba PR</p>
+        <p class="paragrafo">&copy; 2023 | Curitiba / PR</p>
     </footer>
+
     <!-- Atribuindo o arquivo com o código JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
