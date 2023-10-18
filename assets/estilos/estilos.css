@@ -27,10 +27,10 @@
     --titulo-card-tablet: 1.5rem;
     --paragrafo-card-tablet: 1rem;
     /* --- Desktop --- */
-    --titulo-desktop: 1.5rem;
-    --paragrafo-desktop: 1.25rem;
-    --titulo-card-desktop: 1.25rem;
-    --paragrafo-card-desktop: 2rem;
+    --titulo-desktop: 2.5rem;
+    --paragrafo-desktop: 2rem;
+    --titulo-card-desktop: 2rem;
+    --paragrafo-card-desktop: 1.25rem;
 }
 
 /* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas telas menores telas e ajustam e enquadram melhor o conteúdo às telas maiores através das Midia Query */
@@ -304,4 +304,22 @@
     .rodape > .paragrafo {
         font-size: 1.5rem;
     }
+}
+
+@media (min-width: 1440px) {
+    .titulo {
+        font-size: var(--titulo-desktop);
+    }
+    .paragrafo {
+        font-size: var(--paragrafo-desktop);
+    }
+    
+    /* Textos dos cards */
+    .titulo-card {
+        font-size: var(--titulo-card-desktop);
+    }
+    .paragrafo-card {
+        font-size: var(--paragrafo-card-desktop);
+    }
+
 }
