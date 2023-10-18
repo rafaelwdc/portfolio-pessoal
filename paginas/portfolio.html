@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>O que fiz | Rafael Matheus</title>
     <!-- Resetando todos os estilos default dos navegadores -->
     <link rel="stylesheet" href="../assets/estilos/reset.css">
+    <!-- Adicionando os estilos mais padrões (se repetem em todas as páginas) -->
     <link rel="stylesheet" href="../assets/estilos/estilos.css">
+    <!-- Adicionando os estilos que só são usados nessa página -->
     <link rel="stylesheet" href="../assets/estilos/portfolio.css">
     <!-- Adicionando FavIcon Personalizado -->
     <link rel="shortcut icon" href="../assets/imagens/icones/favicon.ico" type="image/x-icon">
@@ -41,35 +43,50 @@
             <!-- Título da Página -->
             <h1 class="titulo esquerda">O que eu fiz</h1>
             <br>
+            <!-- Div ajustará os cards em colunas em caso de telas maiores -->
             <div class="grid">
+                <!-- Card Sebo Digital -->
                 <div class="card-portfolio sebo-digital">
+                    <!-- Div responsável por deixa à mostra o fundo com uma imagem do site à qual o card está sendo representado -->
                     <div class="transparente"></div>
+                    <!-- Parte do Card onde tem algumas informações sobre o site -->
                     <div class="card-apresentacao">
+                        <!-- Alinhamento dos elementos dentro do card -->
                         <div class="alinhamento">
+                            <!-- Título do Card -->
                             <h1 class="titulo-card esquerda">Sebo Digital</h1>
-                            <p>.</p>
+                            <!-- Elemento transparente para ocupar um espaço no grid -->
+                            <p style="opacity: 0;">.</p>
+                            <!-- Breve texto sobre o projeto -->
                             <p class="paragrafo-card esquerda">Site Clone do AluraBooks, para testar os meus conhecimentos com HTML e CSS</p>
+                            <!-- Botão para acessar o projeto, ele abrirá em outra aba do navegador -->
                             <a class="botao-card" href="https://rafaelwdc.github.io/alurabook/" target="_blank" rel="noopener noreferrer">Visitar Página</a>
                         </div>
                     </div>
                 </div>
+                
+                <!-- As informações do Primeiro card se aplicam para os demais -->
+                
+                <!-- Card Sorteador de Amigo Secreto -->
                 <div class="card-portfolio sorteador">
                     <div class="transparente"></div>
                     <div class="card-apresentacao">
                         <div class="alinhamento">
                             <h1 class="titulo-card esquerda">Sorteador Amigo Secreto</h1>
-                            <p>.</p>
+                            <p style="opacity: 0;">.</p>
                             <p class="paragrafo-card esquerda">Site para sorteio de amigo secreto, feito para comprar o presente e só descobrir o felizardo no dia dá entrega</p>
                             <a class="botao-card" href="https://sorteador-amigo-secreto-omega.vercel.app/" target="_blank" rel="noopener noreferrer">Visitar Página</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Card Simulador de Orkut -->
                 <div class="card-portfolio orkut">
                     <div class="transparente"></div>
                     <div class="card-apresentacao">
                         <div class="alinhamento">
                             <h1 class="titulo-card esquerda">Alurakut</h1>
-                            <p>.</p>
+                            <p style="opacity: 0;">.</p>
                             <p class="paragrafo-card esquerda">Site Clone do Orkut, feito durante a Imersão React na plataforma Alura para relembrar esse site tão nostálgico</p>
                             <a class="botao-card" href="https://orkut-simulator.vercel.app/login" target="_blank" rel="noopener noreferrer">Visitar Página</a>
                         </div>
