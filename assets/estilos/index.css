@@ -34,3 +34,9 @@
         margin-bottom: 1rem;
     }
 }
+
+@media (min-width: 1440px) {
+    .secao {
+        width: 1152px;
+    }
+}
