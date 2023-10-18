@@ -1,42 +1,46 @@
+/* Nesse arquivo contêm todos os elementos que só existem na página 'Index' */
+
+/*---------------- Mobile P ------------------ */
+
+/* Organização dos das imagens na tela */
 .pilar {
     display: flex;
     justify-content: center;
     gap: 1em;
 }
-
+/* Ajuste dos títulos das imagens */
 .pilares {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* Ajuste do tamanho da imagem */
 .icones-pilares {
     width: 48px;
 }
 
-
+/* Mobile M */
 @media (min-width: 375px) {
+    /* Ajuste do tamanho da imagem */
     .icones-pilares {
         width: 56px;
     }
 }
 
+/* Mobile G */
 @media (min-width: 425px) {
+    /* Ajuste do tamanho da imagem */
     .icones-pilares {
         width: 63px;
     }
 }
 
-
+/*---------------- Tablet ------------------ */
 @media (min-width: 768px) {
+    /* Ajuste do tamanho da imagem */
     .icones-pilares {
         width: 115px;
         margin-bottom: 1rem;
     }
 }
 
-@media (min-width: 1440px) {
-    .secao {
-        width: 1152px;
-    }
-}
