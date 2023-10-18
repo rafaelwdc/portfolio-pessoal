@@ -1,3 +1,8 @@
+/* Nesse arquivo contêm todos os elementos que só existem na página 'Sobre mim' */
+
+/*---------------- Mobile P ------------------ */
+
+/* Cria um elemento interativo, pode ser clicado no caso de mobile, ou hover em caso de desktop */
 .apresentacao {
     display: flex;
     width: 262px;
@@ -9,35 +14,32 @@
     margin: 0 auto;
 }
 
+/* Adiciona a título à apresentação */
 .apresentacao > .titulo {
     font-size: 2.5rem;
     padding: .5rem;
     text-align: center;
 }
-
+/* Adiciona a imagem à apresentação */
 .foto {
     border: 5px solid var(--cor-escura);
     border-radius: 100%;
     width: 156px;
     z-index: 1;
 }
-
+/* Gira a imagem em 360 graus */
 .foto:hover {
     transition: .5s;
     transform: rotate(360deg);
 }
 
+/*---------------- Tablet ------------------ */
 @media (min-width: 768px) {
+    /* Enquadra o texto ao lado do elemento de apresentação */
     .apresentacao-desktop {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         gap: .5rem;
-    }
-}
-
-@media (min-width: 1440px) {
-    .secao {
-        width: 1152px;
     }
 }
