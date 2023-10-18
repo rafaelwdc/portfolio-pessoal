@@ -89,7 +89,7 @@
 
 /* Fundo do site, que fica fora dos limites do Card Expandido quando ele for acionado */
 .fundo-pop-up {
-    opacity: 0.9;
+    opacity: 0.7;
     background-color: var(--cor-escura);
     position: fixed;
     width: 100%;
@@ -195,13 +195,22 @@
     .alinhamento>.paragrafo-card {
         margin-left: .2rem;
     }
-    .pop-up>.card-academico>.titulo-card {
+    #pop-up-curso-em-video>.card-academico>.titulo-card,
+    #pop-up-alura-lingua>.card-academico>.titulo-card,
+    #pop-up-alura>.card-academico>.titulo-card,
+    #pop-up-uninter>.card-academico>.titulo-card,
+    #pop-up-cisco>.card-academico>.titulo-card {
         font-size: 4rem;
         padding-top: 8rem;
     }
-    .pop-up>.card-academico>.paragrafo-card {
+    #pop-up-curso-em-video>.card-academico>.paragrafo-card,
+    #pop-up-alura-lingua>.card-academico>.paragrafo-card,
+    #pop-up-alura>.card-academico>.paragrafo-card,
+    #pop-up-uninter>.card-academico>.paragrafo-card,
+    #pop-up-cisco>.card-academico>.paragrafo-card {
         font-size: 2rem;
     }
+
     .card-academico > .titulo-card {
         font-size: 4rem;
     }
@@ -218,13 +227,13 @@
         width: 630px;
     }
 
-    .pop-up>.curso-em-video {
+    #pop-up-curso-em-video>.curso-em-video, 
+    #pop-up-alura-lingua>.alura-lingua,
+    #pop-up-alura>.alura,
+    #pop-up-uninter>.uninter,
+    #pop-up-cisco>.cisco  {
         width: 630px;
-        height: 280px;
-    }
-    .pop-up-alura .card-academico{
-        width: 630px;
-        height: 280px;
+        height: 350px;
     }
     
     .lista {
@@ -266,17 +275,30 @@
     .alinhamento > .botao-card {
         margin-left: 1.4rem;
     }
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        left: 20%;
+    }
 }
 
 @media (min-width: 1440px) {
     .grid {
         grid-template-columns: 33% 33% 33%;
     }
-    
+    #pop-up-curso-em-video,
+    #pop-up-alura-lingua,
+    #pop-up-alura,
+    #pop-up-uninter,
+    #pop-up-cisco {
+        left: 30%;
+    }
+     .secao {
+        width: 1152px;
+    }
 }
-
-
-
 
 
 
