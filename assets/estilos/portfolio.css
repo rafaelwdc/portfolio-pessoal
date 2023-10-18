@@ -9,15 +9,6 @@
     border: 1px solid #777;
 }
 
-.alinhamento {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 30px 40px;
-    margin: 1rem;
-    height: 80px;
-    align-items: center;
-}
-
 /* Parte Transparente para que seja possivel ver a imagem de fundo */
 .transparente {
     width: 262px;
