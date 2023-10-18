@@ -1,4 +1,9 @@
-/* Espaçamento do fundo dos Cards */
+/* Nesse arquivo contêm todos os elementos que só existem na página 'Onde Estudei' */
+
+/*---------------- Mobile P ------------------ */
+
+/* -------- Card Minimizado -------- */
+/* Espaçamento do fundo e os elementos dos Cards */
 .card-academico {
     width: 262px;
     height: 146px;
@@ -12,23 +17,6 @@
 }.card-academico > .alinhamento {
     padding-top: 3rem;
 }
-
-.botao-card {
-    background-color: var(--cor-principal);
-    color: var(--cor-escura);
-    font-family: var(--fonte-principal);
-    font-size: .7rem;
-    padding: .5rem;
-    border-radius: .5rem;
-    text-align: center;
-    height: fit-content;
-
-}
-
-/* Card Minimizado */
-
-
-
 
 /* Fundo dos Cards personalizados e seus alinhamentos */
 .curso-em-video {
@@ -62,8 +50,8 @@
     background-size: cover;
 }
 
-/* ### Card Expandido ### */
-
+/* --------- Card Expandido -------- */
+/* Estilização do botão voltar */
 .botao-voltar {
     display: flex;
     align-items: center;
@@ -111,21 +99,28 @@
     margin: 1rem auto 0;
 }
 
-/* Mobile M  */
+/*---------------- Mobile M ------------------ */
 @media (min-width: 375px) {
+    
+    /* -------- Card Minimizado -------- */
     .card-academico {
         width: 308px;
         height: 170px;
     }
-
     .card-academico>.titulo-card {
         padding-top: 5rem;
     }
-
+    .card-academico > .alinhamento {
+        padding-top: 4rem;
+    }
+    .alinhamento {
+        grid-template-columns: 75% 25%;
+    }
     .alinhamento>.paragrafo-card, .card-academico>.paragrafo-card {
         font-size: .94rem;
     }
-
+    
+    /* --------- Card Expandido -------- */
     #pop-up-curso-em-video,
     #pop-up-alura-lingua,
     #pop-up-alura,
@@ -133,34 +128,39 @@
     #pop-up-cisco {
         width: 308px;
     }
-
     .lista {
         width: 292px;
     }
-    .alinhamento {
-        grid-template-columns: 75% 25%;
-    }
-    .card-academico > .alinhamento {
-        padding-top: 4rem;
-    }
 }
 
+/*---------------- Mobile G ------------------ */
+
 @media (min-width: 425px) {
+    /* -------- Card Minimizado -------- */
     .card-academico {
         width: 348px;
         height: 190px;
     }
-
     .card-academico>.titulo-card {
         padding-top: 5rem;
         font-size: 2.3rem;
+    }
+    .alinhamento {
+        grid-template-columns: 78% 22%;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 5rem;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 5rem;
     }
     .card-academico>.alinhamento>.botao-card {
         padding: .5rem;
         width: 3rem;
         font-size: 1rem;
     }
-
+    
+    /* --------- Card Expandido -------- */
     #pop-up-curso-em-video,
     #pop-up-alura-lingua,
     #pop-up-alura,
@@ -168,30 +168,18 @@
     #pop-up-cisco {
         width: 348px;
     }
-
     .lista {
         width: 332px;
     }
-    .alinhamento {
-        grid-template-columns: 50% 50%;
-    }
-    .card-academico > .alinhamento {
-        padding-top: 5rem;
-    }
-    .card-academico > .alinhamento {
-        padding-top: 5rem;
-    }
-    
-    .alinhamento {
-        grid-template-columns: 78% 22%;
-    }
 }
 
+/*---------------- Tablet ------------------ */
 @media (min-width: 768px) {
     .grid {
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    /* -------- Card Minimizado -------- */
     .alinhamento>.paragrafo-card {
         margin-left: .2rem;
     }
@@ -210,7 +198,6 @@
     #pop-up-cisco>.card-academico>.paragrafo-card {
         font-size: 2rem;
     }
-
     .card-academico > .titulo-card {
         font-size: 4rem;
     }
@@ -218,7 +205,21 @@
         width: 290px;
         height: 146px;
     }
+    .card-academico>.titulo {
+        padding-top: 4.6rem;
+        font-size: 2rem;
+    }
+    .apresentacao-academico {
+        margin: 0 auto;
+    }
+    .card-academico > .alinhamento {
+        padding-top: 3rem;
+    }
+    .alinhamento>.paragrafo {
+        font-size: 1.01rem;
+    }
     
+    /* --------- Card Expandido -------- */
     #pop-up-curso-em-video,
     #pop-up-alura-lingua,
     #pop-up-alura,
@@ -226,7 +227,6 @@
     #pop-up-cisco {
         width: 630px;
     }
-
     #pop-up-curso-em-video>.curso-em-video, 
     #pop-up-alura-lingua>.alura-lingua,
     #pop-up-alura>.alura,
@@ -235,7 +235,6 @@
         width: 630px;
         height: 350px;
     }
-    
     .lista {
         margin-top: 2.6rem;
         width: 613px;
@@ -243,25 +242,10 @@
     .lista>.paragrafo {
         font-size: 4rem;
     }
-    .apresentacao-academico {
-        margin: 0 auto;
-    }
-
-    .card-academico>.titulo {
-        padding-top: 4.6rem;
-        font-size: 2rem;
-    }
-
-    .alinhamento>.paragrafo {
-        font-size: 1.01rem;
-    }
-    .card-academico > .alinhamento {
-        padding-top: 3rem;
-    }
-
 }
-
+/*---------------- Laptop ------------------ */
 @media (min-width: 1024px) {
+    /* -------- Card Minimizado -------- */
     .alinhamento {
         grid-template-columns: 70% 30%;
     }
@@ -275,6 +259,8 @@
     .alinhamento > .botao-card {
         margin-left: 1.4rem;
     }
+
+    /* --------- Card Expandido -------- */
     #pop-up-curso-em-video,
     #pop-up-alura-lingua,
     #pop-up-alura,
@@ -283,20 +269,20 @@
         left: 20%;
     }
 }
-
+/*---------------- Desktop ------------------ */
 @media (min-width: 1440px) {
+    /* Div ajustará os cards em colunas em caso de telas maiores de 1440px */
     .grid {
         grid-template-columns: 33% 33% 33%;
     }
+
+    /* --------- Card Expandido -------- */
     #pop-up-curso-em-video,
     #pop-up-alura-lingua,
     #pop-up-alura,
     #pop-up-uninter,
     #pop-up-cisco {
         left: 30%;
-    }
-    .secao {
-        width: 1152px;
     }
 }
 
