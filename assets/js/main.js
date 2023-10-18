@@ -94,9 +94,4 @@ function fechar_cisco(){
     fechar_fundo();
     document.querySelector('#pop-up-cisco').style.display = 'none';
 }
-const testando = document.querySelector('#pop-up-uninter')
-const teste = new IntersectionObserver( (entries) => {
-    console.log(entries);
-} )
 
-teste.observe(testando);
