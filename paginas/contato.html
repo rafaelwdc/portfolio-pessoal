@@ -44,30 +44,30 @@
             <!-- Título da Página -->
             <h1 class="titulo esquerda">Fale comigo</h1>
             <br>
-            <div class="apresentacao-contatos redes-sociais">
-                <p class="paragrafo">Fique por dentro das novidades me seguindo em todas as redes sociais!</p>
-                <ul class="contato-redes-sociais">
-                    <a href="#" class="contato-link-redes-sociais"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Github.svg" alt="Ícone do Github">Github</a>
-                    <a href="#" class="contato-link-redes-sociais"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Insta.svg" alt="Ícone do Instagram">Instagram</a>
-                    <a href="#" class="contato-link-redes-sociais"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Linkedin.svg" alt="Ícone do Linkedin">Linkedin</a>
-                </ul>
-            </div>
-
-            <hr class="linha-divisoria">
-
-            <div class="apresentacao-contatos">
-                <p class="paragrafo">Ou se preferir pode me enviar uma mensagem por aqui!</p>
-                <form action="https://formsubmit.co/rafaelmfreitas93@email.com"  method="POST">
-                    <input type="text" class="campo" name="nome" id="nome" placeholder="Digite o seu nome:">
-                    <br>
-                    <input type="email" class="campo" name="email" placeholder="Digite o seu e-mail:">
-                    <br>
-                    <textarea name="mensagem" class="mensagem" id="msg" cols="23" rows="4" placeholder="Digite a sua mensagem:"></textarea>
-                    <br>
-                    <button type="submit" class="botao">Enviar</button>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="_honey" style="display:none">  
-                </form>
+            <div class="grid">
+                <div class="apresentacao-contatos redes-sociais">
+                    <p class="paragrafo">Fique por dentro das novidades me seguindo em <br>todas as redes sociais!</p>
+                    <ul class="contato-redes-sociais">
+                        <a href="#" class="contato-link-redes-sociais"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Github.svg" alt="Ícone do Github"><p class="paragrafo">Github</p></a>
+                        <a href="#" class="contato-link-redes-sociais"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Insta.svg" alt="Ícone do Instagram"><p class="paragrafo">Instagram</p></a>
+                        <a href="#" class="contato-link-redes-sociais"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Linkedin.svg" alt="Ícone do Linkedin"><p class="paragrafo">Linkedin</p></a>
+                    </ul>
+                </div>
+                <hr class="linha-divisoria">
+                <div class="apresentacao-contatos">
+                    <p class="paragrafo">Ou se preferir pode me enviar uma mensagem por aqui!</p>
+                    <form class="formulario" action="https://formsubmit.co/rafaelmfreitas93@email.com"  method="POST">
+                        <input type="text" class="campo" name="nome" id="nome" placeholder="Digite o seu nome:">
+                        <br>
+                        <input type="email" class="campo" name="email" placeholder="Digite o seu e-mail:">
+                        <br>
+                        <textarea name="mensagem" class="mensagem" id="msg" cols="23" rows="4" placeholder="Digite a sua mensagem:"></textarea>
+                        <br>
+                        <button type="submit" class="botao">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
