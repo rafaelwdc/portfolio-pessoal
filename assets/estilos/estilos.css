@@ -1,4 +1,8 @@
+/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas telas menores telas e ajustam e enquadram melhor o conteúdo às telas maiores através das Midia Query */
+
 /* Nesse arquivo contêm todos os elementos que se repetem em todas as páginas */
+
+/*---------------- Mobile P ------------------ */
 
 /* --------- Importando as Fontes --------- */
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,400;0,700;0,1000;1,100;1,400;1,700&display=swap');
@@ -32,8 +36,6 @@
     --titulo-card-desktop: 2rem;
     --paragrafo-card-desktop: 1.25rem;
 }
-
-/* Usei como ponto de partida o conceito de Mobile First, então todos os estilos padrões se aplicam nas telas menores telas e ajustam e enquadram melhor o conteúdo às telas maiores através das Midia Query */
 
 /*----------------- Textos ----------------- */
 
@@ -223,7 +225,6 @@
     border-radius: .5rem;
     text-align: center;
     height: fit-content;
-
 }
  
 /*---------------- Rodapé ------------------ */
@@ -246,7 +247,6 @@
     width: 42px;
     margin: 1rem;
 }
-
 /* Tamanho das fontes do rodapé */
 .rodape > .paragrafo {
     font-size: 1rem;
@@ -254,6 +254,7 @@
 }
 
 /*---------------- Tablet ------------------ */
+
 @media (min-width: 768px) {
     /* Textos */
     .titulo {
@@ -262,14 +263,12 @@
     .paragrafo {
         font-size: var(--paragrafo-tablet);
     }
-    
     .titulo-card {
         font-size: var(--titulo-card-tablet);
     }
     .paragrafo-card {
         font-size: var(--paragrafo-card-tablet);
     }
-
     /* Cabecalho */
     .cabecalho {
         flex-direction: row;
@@ -316,7 +315,6 @@
     }
     .lista-redes-sociais {
         margin-bottom: .5rem;
-
     }
     .link-redes-sociais {
         width: 55px;
@@ -325,13 +323,17 @@
         font-size: 1.5rem;
     }
 }
+
+/*---------------- Laptop ------------------ */
+
 @media (min-width: 1024px) {
     .secao {
         width: 819px;
     }
 }
 
-/*---------------- Laptop ------------------ */
+/*---------------- Desktop ------------------ */
+
 @media (min-width: 1440px) {
     /* Textos */
     .titulo {
@@ -340,7 +342,6 @@
     .paragrafo {
         font-size: var(--paragrafo-desktop);
     }
-    
     .titulo-card {
         font-size: var(--titulo-card-desktop);
     }
@@ -351,5 +352,4 @@
     .secao {
         width: 1152px;
     }
-
 }
