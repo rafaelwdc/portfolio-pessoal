@@ -1,3 +1,5 @@
+/*---------------- Menu Hamburguer ------------------ */
+
 // Cria a Variável que irá armazenar o id do menu hamburguer ;
 const menu_hamburguer = document.querySelector('#botao-menu-hamburguer');
 
@@ -29,14 +31,17 @@ menu_hamburguer.addEventListener('click', expandir_menu);
 menu_hamburguer.addEventListener('touchstart', expandir_menu);
 
 
+/*---------------- Pop-up Acadêmicos ------------------ */
+
+
 // Controle do Fundo
 function abrir_fundo() {
     document.querySelector('.fundo-pop-up').style.display = 'block';
 }
+
 function fechar_fundo() {
     document.querySelector('.fundo-pop-up').style.display = 'none';
 }
-
 
 // Abrir o Card Expandido do Curso em Vídeo 
 function abrir_curso_em_video(){
@@ -56,6 +61,7 @@ function abrir_alura_lingua(){
     abrir_fundo();
     document.querySelector('#pop-up-alura-lingua').style.display = 'block';
 }
+
 // Fechar o Card Expandido do Alura Língua 
 function fechar_alura_lingua(){
     fechar_fundo();
@@ -67,6 +73,7 @@ function abrir_alura(){
     abrir_fundo();
     document.querySelector('#pop-up-alura').style.display = 'block';
 }
+
 // Fechar o Card Expandido do Alura 
 function fechar_alura(){
     fechar_fundo();
@@ -78,6 +85,7 @@ function abrir_uninter(){
     abrir_fundo();
     document.querySelector('#pop-up-uninter').style.display = 'block';
 }
+
 // Fechar o Card Expandido do Uninter 
 function fechar_uninter(){
     fechar_fundo();
@@ -89,6 +97,7 @@ function abrir_cisco(){
     abrir_fundo();
     document.querySelector('#pop-up-cisco').style.display = 'block';
 }
+
 // Fechar o Card Expandido da Cisco 
 function fechar_cisco(){
     fechar_fundo();
