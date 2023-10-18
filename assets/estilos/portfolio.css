@@ -1,4 +1,8 @@
-/* ------------### Card Portfólio ###------------ */
+/* Nesse arquivo contêm todos os elementos que só existem na página 'O que fiz' */
+
+/*---------------- Mobile P ------------------ */
+
+/* Card Portfólio */
 
 /* Fundo do card */
 .card-portfolio {
@@ -8,14 +12,12 @@
     border-radius: 1em;
     border: 1px solid #777;
 }
-
-/* Parte Transparente para que seja possivel ver a imagem de fundo */
+/* Mascara transparente para que seja possivel ver a imagem de fundo */
 .transparente {
     width: 262px;
     height: 90px;
 }
-
-/* Parte do Card onde vai as informações como título, breve texto e o botão para visitar a página */
+/* Card com informações como título, breve descrição e o botão para visitar a página */
 .card-apresentacao {
     width: 262px;
     height: 100px;
@@ -24,165 +26,124 @@
     background-color: #000000cc;
     border: 1px solid #777;
 }
-
-.botao-card {
-    background-color: var(--cor-principal);
-    color: var(--cor-escura);
-    font-family: var(--fonte-principal);
-    font-size: .7rem;
-    padding: .5rem;
-    text-align: center;
-    border-radius: .5rem;
-    height: fit-content;
-}
-
 /* Fundo dos Cards com as imagens e seu alinhamento */
 .sebo-digital {
     background: url(../imagens/card-portfolio/sebo-digital.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .sorteador {
     background: url(../imagens/card-portfolio/sorteador.png);
     background-size: cover;
 }
-
 .orkut {
     background: url(../imagens/card-portfolio/orkut.png);
     background-size: cover;
     background-position: center;
 }
 
+/*---------------- Mobile M ------------------ */
 
 @media (min-width: 375px) {
+    /* Máscara */
     .transparente {
         height: 100px;
     }
-
+    /* Card fundo */
     .card-portfolio {
         width: 308px;
         height: 210px;
     }
-
+    /* Card informações */
     .card-apresentacao {
         width: 308px;
         height: 110px;
     }
-
     .card-apresentacao>.titulo {
         font-size: 1.5rem;
     }
-
-    .alinhamento>.paragrafo {
-        font-size: 1rem;
-    }
-
-    .alinhamento {
-        grid-template-columns: 75% 25%;
-    }
-
     .card-academico>.alinhamento {
         padding-top: 4rem;
     }
+    .alinhamento {
+        grid-template-columns: 75% 25%;
+    }
+    .alinhamento>.paragrafo {
+        font-size: 1rem;
+    }
 }
 
+/*---------------- Mobile G ------------------ */
+
 @media (min-width: 425px) {
+    /* Card Fundo */
     .card-portfolio {
         width: 348px;
         height: 190px;
     }
-
+    /* Máscara */
     .transparente {
         height: 80px;
     }
-
+    /* Card Informações */
     .card-apresentacao {
         width: 348px;
     }
+    
 }
 
+/*---------------- Tablet ------------------ */
+
 @media (min-width: 768px) {
+    /* Card fundo */
     .card-portfolio {
         width: 300px;
         height: 220px;
     }
-
+    /* Máscara */
     .transparente {
         width: 300px;
         height: 105px;
     }
-
+    
+    /* Card Informações */
     .card-apresentacao {
         width: 300px;
         height: 115px;
     }
 }
 
-
-
-
-
-@media (min-width: 375px) {}
-
-@media (min-width: 425px) {
-    .alinhamento {
-        grid-template-columns: 50% 50%;
-    }
-
-    .card-academico>.alinhamento {
-        padding-top: 5rem;
-    }
-
-}
-
-@media (min-width: 425px) {
-    .card-academico>.alinhamento {
-        padding-top: 5rem;
-    }
-
-    .alinhamento {
-        grid-template-columns: 78% 22%;
-    }
-}
-
-@media (min-width: 768px) {
-    .card-academico>.alinhamento {
-        padding-top: 3rem;
-    }
-
-}
+/*---------------- Laptop ------------------ */
 
 @media (min-width: 1024px) {
-    .alinhamento {
-        grid-template-columns: 70% 30%;
-    }
-
+    /* Card fundo */
     .card-portfolio {
         width: 400px;
         height: 240px;
     }
-
+    /* Card informações */
     .card-apresentacao {
         width: 400px;
         height: 135px;
     }
-
     .card-apresentacao>.alinhamento {
         margin-top: 2rem;
     }
+    .alinhamento {
+        grid-template-columns: 70% 30%;
+    }
 }
 
-@media (min-width: 1440px) {
-    .secao {
-        width: 1152px;
-    }
+/*---------------- Desktop ------------------ */
 
+@media (min-width: 1440px) {
+    /* Div ajustará os cards em colunas em caso de telas maiores de 1440px */
     .grid {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-
+    
+    /* Card informações */
     .alinhamento>.paragrafo-card {
         margin-top: 1rem;
     }
