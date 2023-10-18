@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Fale comigo | Rafael Matheus</title>
     <!-- Resetando todos os estilos default dos navegadores -->
     <link rel="stylesheet" href="../assets/estilos/reset.css">
+    <!-- Adicionando os estilos mais padrões (se repetem em todas as páginas) -->
     <link rel="stylesheet" href="../assets/estilos/estilos.css">
+    <!-- Adicionando os estilos que só são usados nessa página -->
     <link rel="stylesheet" href="../assets/estilos/contato.css">
     <!-- Adicionando FavIcon Personalizado -->
     <link rel="shortcut icon" href="../assets/imagens/icones/favicon.ico" type="image/x-icon">
@@ -42,27 +44,42 @@
             <!-- Título da Página -->
             <h1 class="titulo esquerda">Fale comigo</h1>
             <br>
+            <!-- Div ajustará os cards em colunas em caso de telas maiores -->
             <div class="grid">
+                <!-- Div apresenta a primeira forma de contato, através das redes sociais -->
                 <div class="apresentacao-contatos redes-sociais">
                     <p class="paragrafo">Fique por dentro das novidades me seguindo em <br>todas as redes sociais!</p>
+                    <!-- Lista de redes sociais -->
                     <ul class="contato-redes-sociais">
+                        <!-- GitHub -->
                         <a href="https://github.com/rafaelwdc" class="contato-link-redes-sociais" target="_blank" rel="noopener noreferrer"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Github.svg" alt="Ícone do Github"><p class="paragrafo">Github</p></a>
+                        <!-- Instagram -->
                         <a href="https://www.instagram.com/rafaelwdc/" class="contato-link-redes-sociais" target="_blank" rel="noopener noreferrer"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Insta.svg" alt="Ícone do Instagram"><p class="paragrafo">Instagram</p></a>
+                        <!-- Linkedin -->
                         <a href="https://www.linkedin.com/in/rafaelwdc/" class="contato-link-redes-sociais" target="_blank" rel="noopener noreferrer"><img class="contato-img-redes-sociais" src="../assets/imagens/icones/Linkedin.svg" alt="Ícone do Linkedin" ><p class="paragrafo">Linkedin</p></a>
                     </ul>
                 </div>
+                <!-- Linha que divide as duas formas de contato -->
                 <hr class="linha-divisoria">
+                <!-- Div representa a segunda forma de contato, através de uma mensagem enviada diretamente para o meu e-mail -->
                 <div class="apresentacao-contatos">
                     <p class="paragrafo">Ou se preferir pode me enviar uma mensagem por aqui!</p>
+                    <!-- Formulário para enviar a mensagem -->
                     <form class="formulario" action="https://formsubmit.co/rafaelmfreitas93@email.com"  method="POST">
+                        <!-- Campo do Nome, para identificação -->
                         <input type="text" class="campo" name="nome" id="nome" placeholder="Digite o seu nome:">
                         <br>
+                        <!-- Campo do E-mail, para retornar a mensagem -->
                         <input type="email" class="campo" name="email" placeholder="Digite o seu e-mail:">
                         <br>
+                        <!-- Campo da Mensagem, com o conteúdo da mensagem -->
                         <textarea name="mensagem" class="mensagem" id="msg" cols="23" rows="4" placeholder="Digite a sua mensagem:"></textarea>
                         <br>
+                        <!-- Botão para enviar a mensagem -->
                         <button type="submit" class="botao">Enviar</button>
+
                         <input type="hidden" name="_captcha" value="false">
+                        
                         <input type="text" name="_honey" style="display:none">
                     </form>
                 </div>
