@@ -309,6 +309,10 @@
         color: var(--cor-clara);
         background-color: var(--cor-escura);
     }
+    /* Fundos */
+    .secao {
+        width: 614px;
+    }
     /* Rodapé */
     .rodape {
         height: 160px;
@@ -327,6 +331,7 @@
 /*---------------- Laptop ------------------ */
 
 @media (min-width: 1024px) {
+    /* Fundos */
     .secao {
         width: 819px;
     }
