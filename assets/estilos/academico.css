@@ -177,7 +177,8 @@
 @media (min-width: 768px) {
     .grid {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 307px 307px;
+        justify-content: center;
     }
     /* -------- Card Minimizado -------- */
     .alinhamento>.paragrafo-card {
@@ -245,6 +246,10 @@
 }
 /*---------------- Laptop ------------------ */
 @media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 307px 307px;
+        gap: 1.5rem;
+    }
     /* -------- Card Minimizado -------- */
     .alinhamento {
         grid-template-columns: 70% 30%;
@@ -274,6 +279,11 @@
     /* Div ajustará os cards em colunas em caso de telas maiores de 1440px */
     .grid {
         grid-template-columns: 33% 33% 33%;
+    }
+
+    /* --------- Card Minimizado -------- */
+    .card-academico {
+        margin: 2rem auto;
     }
 
     /* --------- Card Expandido -------- */
